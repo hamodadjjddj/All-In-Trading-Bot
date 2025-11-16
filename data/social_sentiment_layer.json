@@ -1,0 +1,3048 @@
+{
+  "fetch_time": "2025-11-15T21:24:04.962798",
+  "sources": [
+    "reddit",
+    "stocktwits",
+    "twitter"
+  ],
+  "source_weights": {
+    "reddit": 0.4,
+    "stocktwits": 0.4,
+    "twitter": 0.2
+  },
+  "30D": {
+    "timeframe": "30D",
+    "total_posts": 132,
+    "by_source": {
+      "reddit": 132
+    },
+    "avg_sentiment": 0.0484,
+    "sentiment_regime": "Disagreement",
+    "momentum": {
+      "ticker_mentions": {
+        "GOLD": 6,
+        "SPY": 3,
+        "GLD": 1
+      },
+      "momentum_scores": {
+        "GOLD": 0.5,
+        "SPY": 0.8,
+        "GLD": 1.0
+      }
+    },
+    "entity_frequency": {
+      "PERSON": {
+        "Michael Burry": 2,
+        "Alex Karp": 2,
+        "Doug McMillon": 2,
+        "Warren Buffett": 1,
+        "Michael": 1,
+        "Jimmy Kimmel Backlash": 1,
+        "Michael J. Burry": 1,
+        "Ubisoft": 1,
+        "Dan Ives": 1,
+        "YOLO -&gt": 1
+      },
+      "DATE": {
+        "November 14, 2025": 2,
+        "annual": 1,
+        "2025": 1,
+        "October": 1,
+        "September": 1,
+        "today": 1,
+        "The Next 12 Months": 1,
+        "the next 6 months": 1,
+        "the Last 10 Years - Bloomberg": 1,
+        "half-year": 1
+      },
+      "GPE": {
+        "AI": 7,
+        "US": 2,
+        "China": 2,
+        "Verizon": 2,
+        "New York": 2,
+        "Alphabet": 2,
+        "Nvidia": 1,
+        "Exclusive": 1,
+        "Tenev": 1,
+        "Korea": 1
+      },
+      "ORG": {
+        "AMD": 2,
+        "White House": 2,
+        "AI": 2,
+        "Trump": 2,
+        "NBIS": 2,
+        "NVDA": 2,
+        "StubHub": 2,
+        "MSTR": 2,
+        "Daily General Discussion and Advice": 1,
+        "SoftBank": 1
+      },
+      "MONEY": {
+        "$5.83 billion": 1,
+        "10k": 1,
+        "$38 trillion": 1,
+        "a ‘$10": 1,
+        "multi-billion dollar": 1,
+        "57k": 1,
+        "$163 billion": 1,
+        "$1.5K": 1,
+        "3170": 1,
+        "9.2 billion": 1
+      }
+    },
+    "event_frequency": {
+      "geopolitical": 7,
+      "rally": 6,
+      "earnings": 4,
+      "rate_decision": 1
+    },
+    "posts": [
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Warren Buffett will no longer write annual letter, speak at Berkshire Hathaway shareholder meeting",
+        "time": "2025-11-10T21:33:01",
+        "sentiment_score": -0.148,
+        "influence_score": 0.93
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Robinhood wants to allow amateur traders to invest in AI start-ups",
+        "time": "2025-11-11T01:03:00",
+        "sentiment_score": 0.1007,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Daily General Discussion and Advice Thread - November 11, 2025",
+        "time": "2025-11-11T13:01:10",
+        "sentiment_score": 0.0125,
+        "influence_score": 0.54
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "SoftBank sells its entire stake in Nvidia for $5.83 billion",
+        "time": "2025-11-11T16:11:02",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "A Shake-Up in the Fast-Food Industry: Why Wendy’s Is Closing Hundreds of Restaurants",
+        "time": "2025-11-11T18:46:54",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Exclusive | China Hatches Plan to Keep U.S. Military From Getting Its Rare-Earth Magnets",
+        "time": "2025-11-11T19:26:37",
+        "sentiment_score": 0.014,
+        "influence_score": 0.96
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "AMD analyst day- Huge Growth Ahead",
+        "time": "2025-11-11T20:11:10",
+        "sentiment_score": 0.4997,
+        "influence_score": 0.8
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "The U.S. Stock Market vs. Other Developed Countries in 2025",
+        "time": "2025-11-11T21:18:19",
+        "sentiment_score": -0.0062,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "'Big Short' investor Michael Burry accuses AI hyperscalers of artificially boosting earnings",
+        "time": "2025-11-12T02:18:17",
+        "sentiment_score": -0.1,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Prior to dotcom bubble, was there as much fear in the market or consensus about there being a bubble as there is now?",
+        "time": "2025-11-12T13:37:41",
+        "sentiment_score": -0.197,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "What is the future of AMD and for long term investors perspective?",
+        "time": "2025-11-12T13:56:54",
+        "sentiment_score": -0.0125,
+        "influence_score": 0.82
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "White House says October jobs and inflation data may never be released",
+        "time": "2025-11-12T19:56:28",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Wall Street prospers as NY businesses worry over federal tariffs",
+        "time": "2025-11-12T21:21:44",
+        "sentiment_score": -0.2202,
+        "influence_score": 0.65
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Michael burry is a clown who got lucky once",
+        "time": "2025-11-12T22:07:40",
+        "sentiment_score": 0.3774,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "$ORCL down 34% from September highs - Is this the dip to buy or a value trap?",
+        "time": "2025-11-12T23:20:24",
+        "sentiment_score": -0.0649,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Alphabet as an AI hedge stock pick",
+        "time": "2025-11-13T01:39:40",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Markets about to rally? House passes bill to reopen government – Trump’s signature next!",
+        "time": "2025-11-13T02:35:52",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "AMZN and GOOG, which one is better for long term holding",
+        "time": "2025-11-13T04:54:53",
+        "sentiment_score": 0.3327,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Michael Burry is shutting down Scion Asset Management",
+        "time": "2025-11-13T06:17:19",
+        "sentiment_score": 0.1028,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "IBM has unveiled two unprecedentedly complex quantum computers",
+        "time": "2025-11-13T08:09:39",
+        "sentiment_score": -0.15,
+        "influence_score": 0.93
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Is Altman crazy - he never stops with this stuff",
+        "time": "2025-11-13T12:46:08",
+        "sentiment_score": -0.4198,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Where would you put your money if you had $10k today?",
+        "time": "2025-11-13T14:02:34",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Bubble or Nothing",
+        "time": "2025-11-13T15:11:31",
+        "sentiment_score": 0.0,
+        "influence_score": 0.72
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Disney posts mixed results as streaming growth is offset by legacy TV declines",
+        "time": "2025-11-13T15:22:29",
+        "sentiment_score": 0.1909,
+        "influence_score": 0.78
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Disney Streaming Subscribers Grow Despite Jimmy Kimmel Backlash",
+        "time": "2025-11-13T15:46:40",
+        "sentiment_score": 0.0,
+        "influence_score": 0.99
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Palantir CEO Alex Karp warns some AI investments 'may not create enough value' to justify cost",
+        "time": "2025-11-13T16:15:59",
+        "sentiment_score": -0.2511,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Impacts of Government Shutdowns &amp; Lack of Data",
+        "time": "2025-11-13T16:19:45",
+        "sentiment_score": -0.1591,
+        "influence_score": 0.75
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "‘Squid Game market’: how Asian retail traders are driving US meme stocks",
+        "time": "2025-11-13T16:39:29",
+        "sentiment_score": -0.1,
+        "influence_score": 0.86
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "US Expects To Add 32GW Of Solar Capacity In The Next 12 Months",
+        "time": "2025-11-13T16:41:06",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "There’s always opportunity in the market",
+        "time": "2025-11-13T17:02:47",
+        "sentiment_score": 0.2107,
+        "influence_score": 0.93
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "NBIS stock price plummets; is now a good time to buy the dip?",
+        "time": "2025-11-13T17:11:16",
+        "sentiment_score": 0.5702,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "The Margin Calls will be spectacular in the next 6 months.",
+        "time": "2025-11-13T17:21:07",
+        "sentiment_score": 0.15,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Disney stock falls 8% as media giant posts mixed results",
+        "time": "2025-11-13T17:23:00",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Odd Lots: Cliff Asness on How Markets Got Dumber in the Last 10 Years - Bloomberg",
+        "time": "2025-11-13T17:31:43",
+        "sentiment_score": -0.3346,
+        "influence_score": 0.6
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "How prevalent is 2 and 20 as payment to fund manager?",
+        "time": "2025-11-13T17:34:09",
+        "sentiment_score": 0.0,
+        "influence_score": 0.67
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Investing to minimize (not zero out) exposure to AI/Tech bubble?",
+        "time": "2025-11-13T18:18:29",
+        "sentiment_score": 0.0,
+        "influence_score": 0.67
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Nvidia CEO reportedly said China will lead the AI race what does this mean for NVDA long term",
+        "time": "2025-11-13T18:43:31",
+        "sentiment_score": -0.0906,
+        "influence_score": 0.95
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "CSCO, an example of bubbles and extended drawdowns.",
+        "time": "2025-11-13T19:11:40",
+        "sentiment_score": 0.0,
+        "influence_score": 0.85
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "PALANTIR - Is Alex Karp a GENIUS ?... or a PPC ?",
+        "time": "2025-11-13T19:16:44",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Exclusive | Verizon to Cut About 15,000 Jobs",
+        "time": "2025-11-13T19:43:23",
+        "sentiment_score": -0.0766,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "This just happened to Michael J. Burry",
+        "time": "2025-11-13T19:45:09",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Hedge funds are still dumping stocks while retail investors keep the bull market alive",
+        "time": "2025-11-13T19:59:58",
+        "sentiment_score": 0.0886,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "My application to Wendy’s",
+        "time": "2025-11-13T20:14:08",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Do you have any less discussed positions that have done well for you?",
+        "time": "2025-11-13T20:23:30",
+        "sentiment_score": 0.0533,
+        "influence_score": 0.91
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "There are always pockets of the market that function as a hedge.",
+        "time": "2025-11-13T21:10:30",
+        "sentiment_score": 0.0,
+        "influence_score": 0.68
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Ubisoft delays half-year results, requests trading suspension",
+        "time": "2025-11-13T21:24:21",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "What Are Your Moves Tomorrow, November 14, 2025",
+        "time": "2025-11-13T21:57:20",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Robinhood CEO Vlad Tenev says prediction market is company's fastest-growing business ever",
+        "time": "2025-11-13T22:06:09",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Dan Ives says retail investors are now 'at the adult table' in the stock market",
+        "time": "2025-11-13T22:08:23",
+        "sentiment_score": 0.05,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Buying the Dip midday tomorrow after some early selling.",
+        "time": "2025-11-13T22:23:14",
+        "sentiment_score": 0.05,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Full port YOLO -&gt; Down 20% in 3 days. Two months worth of salary gone. I'll see 🫵 at Wendy's",
+        "time": "2025-11-13T23:09:26",
+        "sentiment_score": 0.3707,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "StubHub stock tanks 20% as CEO says it is not giving guidance for current quarter",
+        "time": "2025-11-13T23:54:20",
+        "sentiment_score": -0.1292,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Markets no longer view the December rate cut as a sure bet, with Fed officials casting doubts",
+        "time": "2025-11-14T00:21:21",
+        "sentiment_score": 0.003,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "AI isn't a bubble but rather an opportunity, JPMorgan's Erdoes says",
+        "time": "2025-11-14T00:51:41",
+        "sentiment_score": 0.2859,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": "GOLD",
+        "title": "My first gold bar",
+        "time": "2025-11-14T00:54:37",
+        "sentiment_score": 0.125,
+        "influence_score": 0.97
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Is Axon a good buy right now?",
+        "time": "2025-11-14T01:00:23",
+        "sentiment_score": 0.4666,
+        "influence_score": 0.66
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "AI storage plays (NET/AKAM/BLZE)",
+        "time": "2025-11-14T01:14:50",
+        "sentiment_score": 0.125,
+        "influence_score": 0.53
+      },
+      {
+        "source": "reddit",
+        "ticker": "SPY",
+        "title": "Reminder, SPY is only off THREE PERCENT from its high.",
+        "time": "2025-11-14T01:16:10",
+        "sentiment_score": 0.04,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Got It For Spot",
+        "time": "2025-11-14T01:58:03",
+        "sentiment_score": 0.0,
+        "influence_score": 0.95
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "[WSJ] Big Tech’s Soaring Profits Have an Ugly Underside: OpenAI’s Losses",
+        "time": "2025-11-14T02:17:34",
+        "sentiment_score": -0.4133,
+        "influence_score": 0.84
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Tesla Shares Plunge 7% Amid Product Recalls and CarPlay Integration Plans",
+        "time": "2025-11-14T02:42:27",
+        "sentiment_score": 0.148,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "This is why you hedge",
+        "time": "2025-11-14T03:19:31",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Anthropic at an implied 216Bn val???",
+        "time": "2025-11-14T03:25:56",
+        "sentiment_score": 0.0,
+        "influence_score": 0.65
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Amazon and Microsoft Back Effort That Would Restrict Nvidia’s Exports to China",
+        "time": "2025-11-14T04:27:02",
+        "sentiment_score": -0.1132,
+        "influence_score": 0.84
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Nonstop gains on NVDA",
+        "time": "2025-11-14T06:50:23",
+        "sentiment_score": 0.17,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "𓀾 𓂀 Imhotep says f' your calls",
+        "time": "2025-11-14T08:05:48",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Do not fold now",
+        "time": "2025-11-14T08:58:26",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": "GOLD",
+        "title": "Gold stack from Korea",
+        "time": "2025-11-14T09:12:05",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "r/Stocks Daily Discussion &amp; Fundamentals Friday Nov 14, 2025",
+        "time": "2025-11-14T11:30:55",
+        "sentiment_score": 0.0,
+        "influence_score": 0.76
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "I sense a great disturbance in the force :",
+        "time": "2025-11-14T12:31:05",
+        "sentiment_score": 0.5806,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": "GOLD",
+        "title": "It's the only thing that makes sense",
+        "time": "2025-11-14T12:31:54",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Here’s a summary of Michael Burry’s view on Big Tech earnings",
+        "time": "2025-11-14T12:44:36",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "“The trend is your friend, until the end when it bends.” - Ed Seykota",
+        "time": "2025-11-14T12:49:46",
+        "sentiment_score": 0.247,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Daily Discussion Thread for November 14, 2025",
+        "time": "2025-11-14T13:02:28",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "My contrarian read on ENPH",
+        "time": "2025-11-14T13:05:12",
+        "sentiment_score": 0.0,
+        "influence_score": 0.56
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Why are streaming services still growing their number of subscribers?",
+        "time": "2025-11-14T13:34:10",
+        "sentiment_score": 0.125,
+        "influence_score": 0.78
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Backholder spotted. My WYFI ride from 130k to 170k to 80k",
+        "time": "2025-11-14T13:53:25",
+        "sentiment_score": 0.0,
+        "influence_score": 0.59
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "What does depreciation have to do with falsely stating profitability?",
+        "time": "2025-11-14T14:05:23",
+        "sentiment_score": -0.0634,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Walmart CEO Doug McMillon retiring, succeeded by John Furner",
+        "time": "2025-11-14T14:10:08",
+        "sentiment_score": 0.2107,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "ES Future Loss Porn",
+        "time": "2025-11-14T14:16:20",
+        "sentiment_score": -0.1591,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "CNN Breaks In with Bombshell Update: Poll Finds Majority Blame Trump for ‘Economic Crisis,’ Experts Warn",
+        "time": "2025-11-14T14:32:30",
+        "sentiment_score": -0.1107,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "'We are guilty of spending our rainy-day fund in sunny weather': Top economists unite to urge action on $38 trillion national debt",
+        "time": "2025-11-14T14:55:01",
+        "sentiment_score": -0.0723,
+        "influence_score": 0.85
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "When are bonds actually superior? I don't get it.",
+        "time": "2025-11-14T14:57:33",
+        "sentiment_score": 0.6211,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Burry’s AI Depreciation Critique is just optics, the real risk is return on growth capex",
+        "time": "2025-11-14T15:34:28",
+        "sentiment_score": 0.164,
+        "influence_score": 0.92
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "WalMart CEO Doug McMillon is retiring and is being replaced by heir apparent",
+        "time": "2025-11-14T15:43:44",
+        "sentiment_score": 0.025,
+        "influence_score": 0.84
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "StubHub stock plummets 24% after company withholds fourth-quarter guidance",
+        "time": "2025-11-14T15:49:49",
+        "sentiment_score": 0.0,
+        "influence_score": 0.84
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Verizon to cut 15K jobs in largest layoffs in its history",
+        "time": "2025-11-14T15:57:43",
+        "sentiment_score": -0.1366,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Weekly Earnings Thread 11/17 - 11/21",
+        "time": "2025-11-14T16:03:52",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "True but cruel and inhumane",
+        "time": "2025-11-14T16:05:06",
+        "sentiment_score": -0.5826,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "The Treasury is now selectively giving out tax cuts to cryptocurrency companies, energy corporations, and private equity firms. This administration is ignoring parts of our tax laws solely to benefit corporations and the wealthy.",
+        "time": "2025-11-14T16:14:41",
+        "sentiment_score": 0.4798,
+        "influence_score": 0.75
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "White House: Public will ‘likely never’ see recent economic data, despite shutdown’s end",
+        "time": "2025-11-14T17:00:18",
+        "sentiment_score": 0.02,
+        "influence_score": 0.93
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Americans with six-figure incomes are in 'survival mode'",
+        "time": "2025-11-14T17:01:15",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": "SPY",
+        "title": "A messy market, but not a bear market",
+        "time": "2025-11-14T17:07:58",
+        "sentiment_score": -0.1951,
+        "influence_score": 0.53
+      },
+      {
+        "source": "reddit",
+        "ticker": "SPY",
+        "title": "If Current Valuations Are Supported by Earnings, Why is Schiller PE at Dot Com Bubble Levels?",
+        "time": "2025-11-14T17:15:09",
+        "sentiment_score": 0.1591,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Omaha Steaks CEO warns families a ‘$10-a-pound reality’ for beef is coming",
+        "time": "2025-11-14T17:27:06",
+        "sentiment_score": -0.0513,
+        "influence_score": 0.94
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Goldman Sachs Says U.S. Stocks Will Lag Behind the World for the Next Decade",
+        "time": "2025-11-14T17:41:24",
+        "sentiment_score": -0.27,
+        "influence_score": 0.94
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "I Love Volatility",
+        "time": "2025-11-14T17:46:16",
+        "sentiment_score": 0.5685,
+        "influence_score": 0.89
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "If 'Time in the Market is Better than Timing the Market\"....",
+        "time": "2025-11-14T17:54:27",
+        "sentiment_score": 0.4702,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "New design looking good",
+        "time": "2025-11-14T17:58:35",
+        "sentiment_score": 0.4293,
+        "influence_score": 0.61
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "When they’re treating multi-billion dollar sports teams like collectibles, it’s time to tax the rich.",
+        "time": "2025-11-14T18:21:56",
+        "sentiment_score": 0.551,
+        "influence_score": 0.79
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "I guess Yahoo Finance just sucks now. What are your other favorite stock trackers?",
+        "time": "2025-11-14T18:43:12",
+        "sentiment_score": 0.0765,
+        "influence_score": 0.74
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "My +30% gain in NBIS now sits at +6%. I’m ready to buy more",
+        "time": "2025-11-14T19:13:48",
+        "sentiment_score": 0.5298,
+        "influence_score": 0.83
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "$57k loss porn on MSTR (shares only) - still HODLing... wen moon again?",
+        "time": "2025-11-14T19:15:11",
+        "sentiment_score": -0.1591,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "sinn of the day: greed",
+        "time": "2025-11-14T19:25:01",
+        "sentiment_score": -0.2009,
+        "influence_score": 0.64
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Midterms elections are always bullish",
+        "time": "2025-11-14T19:42:08",
+        "sentiment_score": 0.0,
+        "influence_score": 0.69
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Why are the world’s central banks SECRETLY buying gold?",
+        "time": "2025-11-14T19:42:22",
+        "sentiment_score": -0.1,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": "GOLD",
+        "title": "Second guessing the 1/10 oz gold bullion coin I bought for my husband",
+        "time": "2025-11-14T19:44:48",
+        "sentiment_score": 0.0,
+        "influence_score": 0.9
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Am I screwed or should I wait",
+        "time": "2025-11-14T19:48:17",
+        "sentiment_score": -0.247,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "[FT] Oracle hit hard in Wall Street’s tech sell-off over its huge AI bet",
+        "time": "2025-11-14T19:58:26",
+        "sentiment_score": 0.1402,
+        "influence_score": 0.71
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Hey guys, they're just handing out cash over here.",
+        "time": "2025-11-14T20:06:24",
+        "sentiment_score": 0.0,
+        "influence_score": 0.93
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "United Health $UNH looks really good here pre Berkshire 13-F. Also still bullish on $LULU",
+        "time": "2025-11-14T20:23:22",
+        "sentiment_score": 0.7089,
+        "influence_score": 0.69
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Changed my Robinhood configuration",
+        "time": "2025-11-14T20:39:57",
+        "sentiment_score": 0.0,
+        "influence_score": 0.67
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "900,000 new homeowners are underwater on their mortgages",
+        "time": "2025-11-14T20:42:24",
+        "sentiment_score": 0.0682,
+        "influence_score": 0.86
+      },
+      {
+        "source": "reddit",
+        "ticker": "GOLD",
+        "title": "Wealthsimple Gold Coin 1/10 oz",
+        "time": "2025-11-14T20:45:02",
+        "sentiment_score": 0.0,
+        "influence_score": 0.62
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Exclusive | Chinese Hackers Used Anthropic’s AI to Automate Cyberattacks",
+        "time": "2025-11-14T20:53:04",
+        "sentiment_score": 0.064,
+        "influence_score": 0.67
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Is this too high of a premium?",
+        "time": "2025-11-14T20:58:41",
+        "sentiment_score": 0.08,
+        "influence_score": 0.72
+      },
+      {
+        "source": "reddit",
+        "ticker": "GOLD",
+        "title": "It's not \"physical bitcoin\"",
+        "time": "2025-11-14T21:07:13",
+        "sentiment_score": 0.0,
+        "influence_score": 0.89
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Trump raised eyebrows after asking America’s top CEOs for tips on affordability crisis: ‘He’s surrounded by a lot of ‘yes men’’",
+        "time": "2025-11-14T21:10:28",
+        "sentiment_score": -0.0053,
+        "influence_score": 0.59
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Lina: \" The question that Mayor-elect Mamdani was asking was, well working people are already fleeing New York, they're already having to leave New York because they can't afford to live here, and shouldn't we care about that too?\"",
+        "time": "2025-11-14T21:23:29",
+        "sentiment_score": -0.0242,
+        "influence_score": 0.84
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "The people complaining about SNAP fraud never want to talk about the top 1% stealing $163 billion per year from taxpayers through tax evasion schemes.",
+        "time": "2025-11-14T21:25:45",
+        "sentiment_score": -0.164,
+        "influence_score": 0.94
+      },
+      {
+        "source": "reddit",
+        "ticker": "GLD",
+        "title": "How do you pick stocks for your portfolio?",
+        "time": "2025-11-14T21:28:23",
+        "sentiment_score": 0.0,
+        "influence_score": 0.74
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "YOLO’d $1.5K into TSLA 0DTE OTM calls, entered at open, sold for 300% gain in an hour. And scalped some MSTR. Lucky Friday in my new account",
+        "time": "2025-11-14T21:35:45",
+        "sentiment_score": 0.4458,
+        "influence_score": 0.67
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "State of the stack",
+        "time": "2025-11-14T21:47:57",
+        "sentiment_score": 0.0,
+        "influence_score": 0.99
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Weekend Discussion Thread for the Weekend of November 14, 2025",
+        "time": "2025-11-14T21:57:32",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Elon Musk is now earning $3170 a SECOND",
+        "time": "2025-11-14T22:04:19",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "DOWN WITH SAYLOR",
+        "time": "2025-11-14T22:12:37",
+        "sentiment_score": -0.0778,
+        "influence_score": 0.84
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Investing in auto loans, how does it work?",
+        "time": "2025-11-14T22:16:01",
+        "sentiment_score": 0.0,
+        "influence_score": 0.62
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Berkshire Reveals Stake in Alphabet",
+        "time": "2025-11-14T22:16:55",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Warren Buffett's Berkshire Hathaway reveals new position in Alphabet",
+        "time": "2025-11-14T22:31:34",
+        "sentiment_score": 0.0682,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "CDTX soared 105 percent after the 9.2 billion Merck deal, smart science or pure luck",
+        "time": "2025-11-14T22:44:29",
+        "sentiment_score": 0.4525,
+        "influence_score": 0.52
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "GOOGL 35k $ Gains",
+        "time": "2025-11-14T23:51:34",
+        "sentiment_score": 0.17,
+        "influence_score": 0.82
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "BLS data delays, CPI silence here comes the market’s wake up call next week",
+        "time": "2025-11-14T23:53:21",
+        "sentiment_score": 0.0,
+        "influence_score": 0.78
+      }
+    ]
+  },
+  "7D": {
+    "timeframe": "7D",
+    "total_posts": 132,
+    "by_source": {
+      "reddit": 132
+    },
+    "avg_sentiment": 0.0484,
+    "sentiment_regime": "Disagreement",
+    "momentum": {
+      "ticker_mentions": {
+        "GOLD": 6,
+        "SPY": 3,
+        "GLD": 1
+      },
+      "momentum_scores": {
+        "GOLD": 0.5,
+        "SPY": 0.8,
+        "GLD": 1.0
+      }
+    },
+    "entity_frequency": {
+      "PERSON": {
+        "Michael Burry": 2,
+        "Alex Karp": 2,
+        "Doug McMillon": 2,
+        "Warren Buffett": 1,
+        "Michael": 1,
+        "Jimmy Kimmel Backlash": 1,
+        "Michael J. Burry": 1,
+        "Ubisoft": 1,
+        "Dan Ives": 1,
+        "YOLO -&gt": 1
+      },
+      "DATE": {
+        "November 14, 2025": 2,
+        "annual": 1,
+        "2025": 1,
+        "October": 1,
+        "September": 1,
+        "today": 1,
+        "The Next 12 Months": 1,
+        "the next 6 months": 1,
+        "the Last 10 Years - Bloomberg": 1,
+        "half-year": 1
+      },
+      "GPE": {
+        "AI": 7,
+        "US": 2,
+        "China": 2,
+        "Verizon": 2,
+        "New York": 2,
+        "Alphabet": 2,
+        "Nvidia": 1,
+        "Exclusive": 1,
+        "Tenev": 1,
+        "Korea": 1
+      },
+      "ORG": {
+        "AMD": 2,
+        "White House": 2,
+        "AI": 2,
+        "Trump": 2,
+        "NBIS": 2,
+        "NVDA": 2,
+        "StubHub": 2,
+        "MSTR": 2,
+        "Daily General Discussion and Advice": 1,
+        "SoftBank": 1
+      },
+      "MONEY": {
+        "$5.83 billion": 1,
+        "10k": 1,
+        "$38 trillion": 1,
+        "a ‘$10": 1,
+        "multi-billion dollar": 1,
+        "57k": 1,
+        "$163 billion": 1,
+        "$1.5K": 1,
+        "3170": 1,
+        "9.2 billion": 1
+      }
+    },
+    "event_frequency": {
+      "geopolitical": 7,
+      "rally": 6,
+      "earnings": 4,
+      "rate_decision": 1
+    },
+    "posts": [
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Warren Buffett will no longer write annual letter, speak at Berkshire Hathaway shareholder meeting",
+        "time": "2025-11-10T21:33:01",
+        "sentiment_score": -0.148,
+        "influence_score": 0.93
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Robinhood wants to allow amateur traders to invest in AI start-ups",
+        "time": "2025-11-11T01:03:00",
+        "sentiment_score": 0.1007,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Daily General Discussion and Advice Thread - November 11, 2025",
+        "time": "2025-11-11T13:01:10",
+        "sentiment_score": 0.0125,
+        "influence_score": 0.54
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "SoftBank sells its entire stake in Nvidia for $5.83 billion",
+        "time": "2025-11-11T16:11:02",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "A Shake-Up in the Fast-Food Industry: Why Wendy’s Is Closing Hundreds of Restaurants",
+        "time": "2025-11-11T18:46:54",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Exclusive | China Hatches Plan to Keep U.S. Military From Getting Its Rare-Earth Magnets",
+        "time": "2025-11-11T19:26:37",
+        "sentiment_score": 0.014,
+        "influence_score": 0.96
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "AMD analyst day- Huge Growth Ahead",
+        "time": "2025-11-11T20:11:10",
+        "sentiment_score": 0.4997,
+        "influence_score": 0.8
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "The U.S. Stock Market vs. Other Developed Countries in 2025",
+        "time": "2025-11-11T21:18:19",
+        "sentiment_score": -0.0062,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "'Big Short' investor Michael Burry accuses AI hyperscalers of artificially boosting earnings",
+        "time": "2025-11-12T02:18:17",
+        "sentiment_score": -0.1,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Prior to dotcom bubble, was there as much fear in the market or consensus about there being a bubble as there is now?",
+        "time": "2025-11-12T13:37:41",
+        "sentiment_score": -0.197,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "What is the future of AMD and for long term investors perspective?",
+        "time": "2025-11-12T13:56:54",
+        "sentiment_score": -0.0125,
+        "influence_score": 0.82
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "White House says October jobs and inflation data may never be released",
+        "time": "2025-11-12T19:56:28",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Wall Street prospers as NY businesses worry over federal tariffs",
+        "time": "2025-11-12T21:21:44",
+        "sentiment_score": -0.2202,
+        "influence_score": 0.65
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Michael burry is a clown who got lucky once",
+        "time": "2025-11-12T22:07:40",
+        "sentiment_score": 0.3774,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "$ORCL down 34% from September highs - Is this the dip to buy or a value trap?",
+        "time": "2025-11-12T23:20:24",
+        "sentiment_score": -0.0649,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Alphabet as an AI hedge stock pick",
+        "time": "2025-11-13T01:39:40",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Markets about to rally? House passes bill to reopen government – Trump’s signature next!",
+        "time": "2025-11-13T02:35:52",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "AMZN and GOOG, which one is better for long term holding",
+        "time": "2025-11-13T04:54:53",
+        "sentiment_score": 0.3327,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Michael Burry is shutting down Scion Asset Management",
+        "time": "2025-11-13T06:17:19",
+        "sentiment_score": 0.1028,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "IBM has unveiled two unprecedentedly complex quantum computers",
+        "time": "2025-11-13T08:09:39",
+        "sentiment_score": -0.15,
+        "influence_score": 0.93
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Is Altman crazy - he never stops with this stuff",
+        "time": "2025-11-13T12:46:08",
+        "sentiment_score": -0.4198,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Where would you put your money if you had $10k today?",
+        "time": "2025-11-13T14:02:34",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Bubble or Nothing",
+        "time": "2025-11-13T15:11:31",
+        "sentiment_score": 0.0,
+        "influence_score": 0.72
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Disney posts mixed results as streaming growth is offset by legacy TV declines",
+        "time": "2025-11-13T15:22:29",
+        "sentiment_score": 0.1909,
+        "influence_score": 0.78
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Disney Streaming Subscribers Grow Despite Jimmy Kimmel Backlash",
+        "time": "2025-11-13T15:46:40",
+        "sentiment_score": 0.0,
+        "influence_score": 0.99
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Palantir CEO Alex Karp warns some AI investments 'may not create enough value' to justify cost",
+        "time": "2025-11-13T16:15:59",
+        "sentiment_score": -0.2511,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Impacts of Government Shutdowns &amp; Lack of Data",
+        "time": "2025-11-13T16:19:45",
+        "sentiment_score": -0.1591,
+        "influence_score": 0.75
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "‘Squid Game market’: how Asian retail traders are driving US meme stocks",
+        "time": "2025-11-13T16:39:29",
+        "sentiment_score": -0.1,
+        "influence_score": 0.86
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "US Expects To Add 32GW Of Solar Capacity In The Next 12 Months",
+        "time": "2025-11-13T16:41:06",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "There’s always opportunity in the market",
+        "time": "2025-11-13T17:02:47",
+        "sentiment_score": 0.2107,
+        "influence_score": 0.93
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "NBIS stock price plummets; is now a good time to buy the dip?",
+        "time": "2025-11-13T17:11:16",
+        "sentiment_score": 0.5702,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "The Margin Calls will be spectacular in the next 6 months.",
+        "time": "2025-11-13T17:21:07",
+        "sentiment_score": 0.15,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Disney stock falls 8% as media giant posts mixed results",
+        "time": "2025-11-13T17:23:00",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Odd Lots: Cliff Asness on How Markets Got Dumber in the Last 10 Years - Bloomberg",
+        "time": "2025-11-13T17:31:43",
+        "sentiment_score": -0.3346,
+        "influence_score": 0.6
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "How prevalent is 2 and 20 as payment to fund manager?",
+        "time": "2025-11-13T17:34:09",
+        "sentiment_score": 0.0,
+        "influence_score": 0.67
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Investing to minimize (not zero out) exposure to AI/Tech bubble?",
+        "time": "2025-11-13T18:18:29",
+        "sentiment_score": 0.0,
+        "influence_score": 0.67
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Nvidia CEO reportedly said China will lead the AI race what does this mean for NVDA long term",
+        "time": "2025-11-13T18:43:31",
+        "sentiment_score": -0.0906,
+        "influence_score": 0.95
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "CSCO, an example of bubbles and extended drawdowns.",
+        "time": "2025-11-13T19:11:40",
+        "sentiment_score": 0.0,
+        "influence_score": 0.85
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "PALANTIR - Is Alex Karp a GENIUS ?... or a PPC ?",
+        "time": "2025-11-13T19:16:44",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Exclusive | Verizon to Cut About 15,000 Jobs",
+        "time": "2025-11-13T19:43:23",
+        "sentiment_score": -0.0766,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "This just happened to Michael J. Burry",
+        "time": "2025-11-13T19:45:09",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Hedge funds are still dumping stocks while retail investors keep the bull market alive",
+        "time": "2025-11-13T19:59:58",
+        "sentiment_score": 0.0886,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "My application to Wendy’s",
+        "time": "2025-11-13T20:14:08",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Do you have any less discussed positions that have done well for you?",
+        "time": "2025-11-13T20:23:30",
+        "sentiment_score": 0.0533,
+        "influence_score": 0.91
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "There are always pockets of the market that function as a hedge.",
+        "time": "2025-11-13T21:10:30",
+        "sentiment_score": 0.0,
+        "influence_score": 0.68
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Ubisoft delays half-year results, requests trading suspension",
+        "time": "2025-11-13T21:24:21",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "What Are Your Moves Tomorrow, November 14, 2025",
+        "time": "2025-11-13T21:57:20",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Robinhood CEO Vlad Tenev says prediction market is company's fastest-growing business ever",
+        "time": "2025-11-13T22:06:09",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Dan Ives says retail investors are now 'at the adult table' in the stock market",
+        "time": "2025-11-13T22:08:23",
+        "sentiment_score": 0.05,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Buying the Dip midday tomorrow after some early selling.",
+        "time": "2025-11-13T22:23:14",
+        "sentiment_score": 0.05,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Full port YOLO -&gt; Down 20% in 3 days. Two months worth of salary gone. I'll see 🫵 at Wendy's",
+        "time": "2025-11-13T23:09:26",
+        "sentiment_score": 0.3707,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "StubHub stock tanks 20% as CEO says it is not giving guidance for current quarter",
+        "time": "2025-11-13T23:54:20",
+        "sentiment_score": -0.1292,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Markets no longer view the December rate cut as a sure bet, with Fed officials casting doubts",
+        "time": "2025-11-14T00:21:21",
+        "sentiment_score": 0.003,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "AI isn't a bubble but rather an opportunity, JPMorgan's Erdoes says",
+        "time": "2025-11-14T00:51:41",
+        "sentiment_score": 0.2859,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": "GOLD",
+        "title": "My first gold bar",
+        "time": "2025-11-14T00:54:37",
+        "sentiment_score": 0.125,
+        "influence_score": 0.97
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Is Axon a good buy right now?",
+        "time": "2025-11-14T01:00:23",
+        "sentiment_score": 0.4666,
+        "influence_score": 0.66
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "AI storage plays (NET/AKAM/BLZE)",
+        "time": "2025-11-14T01:14:50",
+        "sentiment_score": 0.125,
+        "influence_score": 0.53
+      },
+      {
+        "source": "reddit",
+        "ticker": "SPY",
+        "title": "Reminder, SPY is only off THREE PERCENT from its high.",
+        "time": "2025-11-14T01:16:10",
+        "sentiment_score": 0.04,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Got It For Spot",
+        "time": "2025-11-14T01:58:03",
+        "sentiment_score": 0.0,
+        "influence_score": 0.95
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "[WSJ] Big Tech’s Soaring Profits Have an Ugly Underside: OpenAI’s Losses",
+        "time": "2025-11-14T02:17:34",
+        "sentiment_score": -0.4133,
+        "influence_score": 0.84
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Tesla Shares Plunge 7% Amid Product Recalls and CarPlay Integration Plans",
+        "time": "2025-11-14T02:42:27",
+        "sentiment_score": 0.148,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "This is why you hedge",
+        "time": "2025-11-14T03:19:31",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Anthropic at an implied 216Bn val???",
+        "time": "2025-11-14T03:25:56",
+        "sentiment_score": 0.0,
+        "influence_score": 0.65
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Amazon and Microsoft Back Effort That Would Restrict Nvidia’s Exports to China",
+        "time": "2025-11-14T04:27:02",
+        "sentiment_score": -0.1132,
+        "influence_score": 0.84
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Nonstop gains on NVDA",
+        "time": "2025-11-14T06:50:23",
+        "sentiment_score": 0.17,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "𓀾 𓂀 Imhotep says f' your calls",
+        "time": "2025-11-14T08:05:48",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Do not fold now",
+        "time": "2025-11-14T08:58:26",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": "GOLD",
+        "title": "Gold stack from Korea",
+        "time": "2025-11-14T09:12:05",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "r/Stocks Daily Discussion &amp; Fundamentals Friday Nov 14, 2025",
+        "time": "2025-11-14T11:30:55",
+        "sentiment_score": 0.0,
+        "influence_score": 0.76
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "I sense a great disturbance in the force :",
+        "time": "2025-11-14T12:31:05",
+        "sentiment_score": 0.5806,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": "GOLD",
+        "title": "It's the only thing that makes sense",
+        "time": "2025-11-14T12:31:54",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Here’s a summary of Michael Burry’s view on Big Tech earnings",
+        "time": "2025-11-14T12:44:36",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "“The trend is your friend, until the end when it bends.” - Ed Seykota",
+        "time": "2025-11-14T12:49:46",
+        "sentiment_score": 0.247,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Daily Discussion Thread for November 14, 2025",
+        "time": "2025-11-14T13:02:28",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "My contrarian read on ENPH",
+        "time": "2025-11-14T13:05:12",
+        "sentiment_score": 0.0,
+        "influence_score": 0.56
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Why are streaming services still growing their number of subscribers?",
+        "time": "2025-11-14T13:34:10",
+        "sentiment_score": 0.125,
+        "influence_score": 0.78
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Backholder spotted. My WYFI ride from 130k to 170k to 80k",
+        "time": "2025-11-14T13:53:25",
+        "sentiment_score": 0.0,
+        "influence_score": 0.59
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "What does depreciation have to do with falsely stating profitability?",
+        "time": "2025-11-14T14:05:23",
+        "sentiment_score": -0.0634,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Walmart CEO Doug McMillon retiring, succeeded by John Furner",
+        "time": "2025-11-14T14:10:08",
+        "sentiment_score": 0.2107,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "ES Future Loss Porn",
+        "time": "2025-11-14T14:16:20",
+        "sentiment_score": -0.1591,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "CNN Breaks In with Bombshell Update: Poll Finds Majority Blame Trump for ‘Economic Crisis,’ Experts Warn",
+        "time": "2025-11-14T14:32:30",
+        "sentiment_score": -0.1107,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "'We are guilty of spending our rainy-day fund in sunny weather': Top economists unite to urge action on $38 trillion national debt",
+        "time": "2025-11-14T14:55:01",
+        "sentiment_score": -0.0723,
+        "influence_score": 0.85
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "When are bonds actually superior? I don't get it.",
+        "time": "2025-11-14T14:57:33",
+        "sentiment_score": 0.6211,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Burry’s AI Depreciation Critique is just optics, the real risk is return on growth capex",
+        "time": "2025-11-14T15:34:28",
+        "sentiment_score": 0.164,
+        "influence_score": 0.92
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "WalMart CEO Doug McMillon is retiring and is being replaced by heir apparent",
+        "time": "2025-11-14T15:43:44",
+        "sentiment_score": 0.025,
+        "influence_score": 0.84
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "StubHub stock plummets 24% after company withholds fourth-quarter guidance",
+        "time": "2025-11-14T15:49:49",
+        "sentiment_score": 0.0,
+        "influence_score": 0.84
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Verizon to cut 15K jobs in largest layoffs in its history",
+        "time": "2025-11-14T15:57:43",
+        "sentiment_score": -0.1366,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Weekly Earnings Thread 11/17 - 11/21",
+        "time": "2025-11-14T16:03:52",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "True but cruel and inhumane",
+        "time": "2025-11-14T16:05:06",
+        "sentiment_score": -0.5826,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "The Treasury is now selectively giving out tax cuts to cryptocurrency companies, energy corporations, and private equity firms. This administration is ignoring parts of our tax laws solely to benefit corporations and the wealthy.",
+        "time": "2025-11-14T16:14:41",
+        "sentiment_score": 0.4798,
+        "influence_score": 0.75
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "White House: Public will ‘likely never’ see recent economic data, despite shutdown’s end",
+        "time": "2025-11-14T17:00:18",
+        "sentiment_score": 0.02,
+        "influence_score": 0.93
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Americans with six-figure incomes are in 'survival mode'",
+        "time": "2025-11-14T17:01:15",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": "SPY",
+        "title": "A messy market, but not a bear market",
+        "time": "2025-11-14T17:07:58",
+        "sentiment_score": -0.1951,
+        "influence_score": 0.53
+      },
+      {
+        "source": "reddit",
+        "ticker": "SPY",
+        "title": "If Current Valuations Are Supported by Earnings, Why is Schiller PE at Dot Com Bubble Levels?",
+        "time": "2025-11-14T17:15:09",
+        "sentiment_score": 0.1591,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Omaha Steaks CEO warns families a ‘$10-a-pound reality’ for beef is coming",
+        "time": "2025-11-14T17:27:06",
+        "sentiment_score": -0.0513,
+        "influence_score": 0.94
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Goldman Sachs Says U.S. Stocks Will Lag Behind the World for the Next Decade",
+        "time": "2025-11-14T17:41:24",
+        "sentiment_score": -0.27,
+        "influence_score": 0.94
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "I Love Volatility",
+        "time": "2025-11-14T17:46:16",
+        "sentiment_score": 0.5685,
+        "influence_score": 0.89
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "If 'Time in the Market is Better than Timing the Market\"....",
+        "time": "2025-11-14T17:54:27",
+        "sentiment_score": 0.4702,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "New design looking good",
+        "time": "2025-11-14T17:58:35",
+        "sentiment_score": 0.4293,
+        "influence_score": 0.61
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "When they’re treating multi-billion dollar sports teams like collectibles, it’s time to tax the rich.",
+        "time": "2025-11-14T18:21:56",
+        "sentiment_score": 0.551,
+        "influence_score": 0.79
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "I guess Yahoo Finance just sucks now. What are your other favorite stock trackers?",
+        "time": "2025-11-14T18:43:12",
+        "sentiment_score": 0.0765,
+        "influence_score": 0.74
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "My +30% gain in NBIS now sits at +6%. I’m ready to buy more",
+        "time": "2025-11-14T19:13:48",
+        "sentiment_score": 0.5298,
+        "influence_score": 0.83
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "$57k loss porn on MSTR (shares only) - still HODLing... wen moon again?",
+        "time": "2025-11-14T19:15:11",
+        "sentiment_score": -0.1591,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "sinn of the day: greed",
+        "time": "2025-11-14T19:25:01",
+        "sentiment_score": -0.2009,
+        "influence_score": 0.64
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Midterms elections are always bullish",
+        "time": "2025-11-14T19:42:08",
+        "sentiment_score": 0.0,
+        "influence_score": 0.69
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Why are the world’s central banks SECRETLY buying gold?",
+        "time": "2025-11-14T19:42:22",
+        "sentiment_score": -0.1,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": "GOLD",
+        "title": "Second guessing the 1/10 oz gold bullion coin I bought for my husband",
+        "time": "2025-11-14T19:44:48",
+        "sentiment_score": 0.0,
+        "influence_score": 0.9
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Am I screwed or should I wait",
+        "time": "2025-11-14T19:48:17",
+        "sentiment_score": -0.247,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "[FT] Oracle hit hard in Wall Street’s tech sell-off over its huge AI bet",
+        "time": "2025-11-14T19:58:26",
+        "sentiment_score": 0.1402,
+        "influence_score": 0.71
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Hey guys, they're just handing out cash over here.",
+        "time": "2025-11-14T20:06:24",
+        "sentiment_score": 0.0,
+        "influence_score": 0.93
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "United Health $UNH looks really good here pre Berkshire 13-F. Also still bullish on $LULU",
+        "time": "2025-11-14T20:23:22",
+        "sentiment_score": 0.7089,
+        "influence_score": 0.69
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Changed my Robinhood configuration",
+        "time": "2025-11-14T20:39:57",
+        "sentiment_score": 0.0,
+        "influence_score": 0.67
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "900,000 new homeowners are underwater on their mortgages",
+        "time": "2025-11-14T20:42:24",
+        "sentiment_score": 0.0682,
+        "influence_score": 0.86
+      },
+      {
+        "source": "reddit",
+        "ticker": "GOLD",
+        "title": "Wealthsimple Gold Coin 1/10 oz",
+        "time": "2025-11-14T20:45:02",
+        "sentiment_score": 0.0,
+        "influence_score": 0.62
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Exclusive | Chinese Hackers Used Anthropic’s AI to Automate Cyberattacks",
+        "time": "2025-11-14T20:53:04",
+        "sentiment_score": 0.064,
+        "influence_score": 0.67
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Is this too high of a premium?",
+        "time": "2025-11-14T20:58:41",
+        "sentiment_score": 0.08,
+        "influence_score": 0.72
+      },
+      {
+        "source": "reddit",
+        "ticker": "GOLD",
+        "title": "It's not \"physical bitcoin\"",
+        "time": "2025-11-14T21:07:13",
+        "sentiment_score": 0.0,
+        "influence_score": 0.89
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Trump raised eyebrows after asking America’s top CEOs for tips on affordability crisis: ‘He’s surrounded by a lot of ‘yes men’’",
+        "time": "2025-11-14T21:10:28",
+        "sentiment_score": -0.0053,
+        "influence_score": 0.59
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Lina: \" The question that Mayor-elect Mamdani was asking was, well working people are already fleeing New York, they're already having to leave New York because they can't afford to live here, and shouldn't we care about that too?\"",
+        "time": "2025-11-14T21:23:29",
+        "sentiment_score": -0.0242,
+        "influence_score": 0.84
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "The people complaining about SNAP fraud never want to talk about the top 1% stealing $163 billion per year from taxpayers through tax evasion schemes.",
+        "time": "2025-11-14T21:25:45",
+        "sentiment_score": -0.164,
+        "influence_score": 0.94
+      },
+      {
+        "source": "reddit",
+        "ticker": "GLD",
+        "title": "How do you pick stocks for your portfolio?",
+        "time": "2025-11-14T21:28:23",
+        "sentiment_score": 0.0,
+        "influence_score": 0.74
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "YOLO’d $1.5K into TSLA 0DTE OTM calls, entered at open, sold for 300% gain in an hour. And scalped some MSTR. Lucky Friday in my new account",
+        "time": "2025-11-14T21:35:45",
+        "sentiment_score": 0.4458,
+        "influence_score": 0.67
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "State of the stack",
+        "time": "2025-11-14T21:47:57",
+        "sentiment_score": 0.0,
+        "influence_score": 0.99
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Weekend Discussion Thread for the Weekend of November 14, 2025",
+        "time": "2025-11-14T21:57:32",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Elon Musk is now earning $3170 a SECOND",
+        "time": "2025-11-14T22:04:19",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "DOWN WITH SAYLOR",
+        "time": "2025-11-14T22:12:37",
+        "sentiment_score": -0.0778,
+        "influence_score": 0.84
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Investing in auto loans, how does it work?",
+        "time": "2025-11-14T22:16:01",
+        "sentiment_score": 0.0,
+        "influence_score": 0.62
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Berkshire Reveals Stake in Alphabet",
+        "time": "2025-11-14T22:16:55",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Warren Buffett's Berkshire Hathaway reveals new position in Alphabet",
+        "time": "2025-11-14T22:31:34",
+        "sentiment_score": 0.0682,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "CDTX soared 105 percent after the 9.2 billion Merck deal, smart science or pure luck",
+        "time": "2025-11-14T22:44:29",
+        "sentiment_score": 0.4525,
+        "influence_score": 0.52
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "GOOGL 35k $ Gains",
+        "time": "2025-11-14T23:51:34",
+        "sentiment_score": 0.17,
+        "influence_score": 0.82
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "BLS data delays, CPI silence here comes the market’s wake up call next week",
+        "time": "2025-11-14T23:53:21",
+        "sentiment_score": 0.0,
+        "influence_score": 0.78
+      }
+    ]
+  },
+  "24H": {
+    "timeframe": "24H",
+    "total_posts": 81,
+    "by_source": {
+      "reddit": 81
+    },
+    "avg_sentiment": 0.0413,
+    "sentiment_regime": "Disagreement",
+    "momentum": {
+      "ticker_mentions": {
+        "GLD": 1,
+        "GOLD": 11,
+        "SPY": 2,
+        "QQQ": 1
+      },
+      "momentum_scores": {
+        "GLD": 1.0,
+        "GOLD": 0.48,
+        "SPY": 0.5,
+        "QQQ": 1.0
+      }
+    },
+    "entity_frequency": {
+      "MONEY": {
+        "4.3B": 2,
+        "$163 billion": 1,
+        "$1.5K": 1,
+        "3170": 1,
+        "9.2 billion": 1,
+        "8k-$235k": 1,
+        "420": 1,
+        "3.1B": 1,
+        "3.1B.": 1,
+        "trillions of dollars": 1
+      },
+      "ORG": {
+        "Trump": 2,
+        "Google": 2,
+        "MAGA": 2,
+        "MSTR": 1,
+        "CDTX": 1,
+        "Merck": 1,
+        "BLS": 1,
+        "Buffett's Berkshire Takes": 1,
+        "Alphabet Stake": 1,
+        "NBIS": 1
+      },
+      "DATE": {
+        "next week": 3,
+        "15, 2025": 2,
+        "Friday": 1,
+        "the Weekend of November 14, 2025": 1,
+        "last week": 1,
+        "2020": 1,
+        "43-Year-Old Grocery Store Is Bankrupt": 1,
+        "2026 4": 1,
+        "15 years": 1,
+        "50-year": 1
+      },
+      "PERSON": {
+        "Warren Buffett's": 2,
+        "Berkshire Hathaway": 2,
+        "Elon Musk": 1,
+        "Gains": 1,
+        "Cuts Apple": 1,
+        "Marjorie Taylor Greene": 1,
+        "Stagflation": 1,
+        "DJT": 1,
+        "VOYG": 1,
+        "Proof Sovereign": 1
+      },
+      "GPE": {
+        "China": 5,
+        "Alphabet": 3,
+        "AI": 2,
+        "Florida": 1,
+        "Bloomberg": 1,
+        "US": 1,
+        "Roman Empire": 1,
+        "the United States": 1,
+        "Canada": 1,
+        "biopharma": 1
+      }
+    },
+    "event_frequency": {
+      "geopolitical": 12,
+      "rally": 3,
+      "earnings": 3,
+      "market_crash": 1
+    },
+    "posts": [
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "The people complaining about SNAP fraud never want to talk about the top 1% stealing $163 billion per year from taxpayers through tax evasion schemes.",
+        "time": "2025-11-14T21:25:45",
+        "sentiment_score": -0.164,
+        "influence_score": 0.94
+      },
+      {
+        "source": "reddit",
+        "ticker": "GLD",
+        "title": "How do you pick stocks for your portfolio?",
+        "time": "2025-11-14T21:28:23",
+        "sentiment_score": 0.0,
+        "influence_score": 0.74
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "YOLO’d $1.5K into TSLA 0DTE OTM calls, entered at open, sold for 300% gain in an hour. And scalped some MSTR. Lucky Friday in my new account",
+        "time": "2025-11-14T21:35:45",
+        "sentiment_score": 0.4458,
+        "influence_score": 0.67
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "State of the stack",
+        "time": "2025-11-14T21:47:57",
+        "sentiment_score": 0.0,
+        "influence_score": 0.99
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Weekend Discussion Thread for the Weekend of November 14, 2025",
+        "time": "2025-11-14T21:57:32",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Elon Musk is now earning $3170 a SECOND",
+        "time": "2025-11-14T22:04:19",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "DOWN WITH SAYLOR",
+        "time": "2025-11-14T22:12:37",
+        "sentiment_score": -0.0778,
+        "influence_score": 0.84
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Investing in auto loans, how does it work?",
+        "time": "2025-11-14T22:16:01",
+        "sentiment_score": 0.0,
+        "influence_score": 0.62
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Berkshire Reveals Stake in Alphabet",
+        "time": "2025-11-14T22:16:55",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Warren Buffett's Berkshire Hathaway reveals new position in Alphabet",
+        "time": "2025-11-14T22:31:34",
+        "sentiment_score": 0.0682,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "CDTX soared 105 percent after the 9.2 billion Merck deal, smart science or pure luck",
+        "time": "2025-11-14T22:44:29",
+        "sentiment_score": 0.4525,
+        "influence_score": 0.52
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "GOOGL 35k $ Gains",
+        "time": "2025-11-14T23:51:34",
+        "sentiment_score": 0.17,
+        "influence_score": 0.82
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "BLS data delays, CPI silence here comes the market’s wake up call next week",
+        "time": "2025-11-14T23:53:21",
+        "sentiment_score": 0.0,
+        "influence_score": 0.78
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Buffett's Berkshire Takes $4.3B Alphabet Stake, Cuts Apple in Q3",
+        "time": "2025-11-15T00:01:02",
+        "sentiment_score": -0.148,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Full ported NBIS and IREN last week",
+        "time": "2025-11-15T00:25:38",
+        "sentiment_score": 0.0875,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "I dont have a LCS from where I live this side of the world but here is my attempt to stack gold.",
+        "time": "2025-11-15T00:47:24",
+        "sentiment_score": 0.0682,
+        "influence_score": 0.92
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Florida is talking about eliminating property taxes for people’s primary residence.",
+        "time": "2025-11-15T01:21:39",
+        "sentiment_score": 0.2,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Trump drops tariffs on beef, coffee, tropical fruit as pressure builds on consumer prices",
+        "time": "2025-11-15T01:32:14",
+        "sentiment_score": -0.148,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Trump cuts tariffs on goods like coffee, bananas and beef in bid to slash consumer prices",
+        "time": "2025-11-15T01:35:43",
+        "sentiment_score": -0.1012,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "USDA data casts doubt on China's soybean purchase promises touted by Trump",
+        "time": "2025-11-15T01:37:41",
+        "sentiment_score": -0.0129,
+        "influence_score": 0.55
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Google and Disney reach deal to restore ESPN, ABC to YouTube TV",
+        "time": "2025-11-15T01:47:27",
+        "sentiment_score": 0.1591,
+        "influence_score": 0.85
+      },
+      {
+        "source": "reddit",
+        "ticker": "GOLD",
+        "title": "Isn’t it boring to stack all maples?",
+        "time": "2025-11-15T02:08:00",
+        "sentiment_score": -0.6591,
+        "influence_score": 0.74
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Google loss porn -85k",
+        "time": "2025-11-15T02:16:51",
+        "sentiment_score": -0.1591,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Trump scraps tariffs on beef, coffee and tropical fruit in a push to lower grocery store prices",
+        "time": "2025-11-15T02:31:19",
+        "sentiment_score": -0.148,
+        "influence_score": 0.75
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "One big happy family",
+        "time": "2025-11-15T02:45:16",
+        "sentiment_score": 0.4859,
+        "influence_score": 0.84
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "What one do you like better and why?",
+        "time": "2025-11-15T02:53:09",
+        "sentiment_score": 0.5798,
+        "influence_score": 0.58
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Trump withdraws support for Marjorie Taylor Greene",
+        "time": "2025-11-15T02:53:50",
+        "sentiment_score": 0.2009,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "900,000 white Americans have lost their jobs since 2020 per Bloomberg.",
+        "time": "2025-11-15T03:10:31",
+        "sentiment_score": -0.1591,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": "SPY",
+        "title": "SPX Call/Puts / PLTR puts $8k-$235k YOLO",
+        "time": "2025-11-15T04:09:31",
+        "sentiment_score": 0.2139,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "The US’s refusal to ratify the TPP is my Roman Empire.",
+        "time": "2025-11-15T04:48:11",
+        "sentiment_score": 0.0,
+        "influence_score": 0.54
+      },
+      {
+        "source": "reddit",
+        "ticker": "GOLD",
+        "title": "China discovers super-large single gold deposit with 1444 tons of gold",
+        "time": "2025-11-15T04:54:43",
+        "sentiment_score": -0.0357,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": "GOLD",
+        "title": "As a goldbug, besides gold, what are your other investment areas?",
+        "time": "2025-11-15T06:27:58",
+        "sentiment_score": -0.0625,
+        "influence_score": 0.77
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Trump cuts tariffs on beef, coffee and other foods as inflation concerns mount",
+        "time": "2025-11-15T06:47:55",
+        "sentiment_score": -0.2105,
+        "influence_score": 0.6
+      },
+      {
+        "source": "reddit",
+        "ticker": "GOLD",
+        "title": "China’s sovereign fund and military are buying gold but not reporting it in official stats.",
+        "time": "2025-11-15T07:42:25",
+        "sentiment_score": -0.05,
+        "influence_score": 0.52
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "President Stagflation weaves and dodges: Trump cuts tariffs on beef, coffee and other foods as inflation concerns mount",
+        "time": "2025-11-15T08:41:51",
+        "sentiment_score": -0.2105,
+        "influence_score": 0.56
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Did I get a good deal ? 8g 10k 24 inch rope chain for $420",
+        "time": "2025-11-15T09:11:02",
+        "sentiment_score": 0.5702,
+        "influence_score": 0.55
+      },
+      {
+        "source": "reddit",
+        "ticker": "GOLD",
+        "title": "Selling gold as individual ? I find it easy to buy but any experience with selling gold ?",
+        "time": "2025-11-15T09:36:54",
+        "sentiment_score": 0.2685,
+        "influence_score": 0.53
+      },
+      {
+        "source": "reddit",
+        "ticker": "GOLD",
+        "title": "First Piece of gold acquired",
+        "time": "2025-11-15T09:42:26",
+        "sentiment_score": 0.125,
+        "influence_score": 0.84
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Daily General Discussion and Advice Thread - November 15, 2025",
+        "time": "2025-11-15T10:01:04",
+        "sentiment_score": 0.0125,
+        "influence_score": 0.53
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Sorry to ask but can anyone tell me if this is for sure fake or not. I mean is it obviously fake or not. Asking for a friend.",
+        "time": "2025-11-15T10:10:59",
+        "sentiment_score": -0.521,
+        "influence_score": 0.67
+      },
+      {
+        "source": "reddit",
+        "ticker": "GOLD",
+        "title": "Genuine Question: What gives gold the value it holds? Is it purely scarcity?",
+        "time": "2025-11-15T11:01:02",
+        "sentiment_score": 0.3604,
+        "influence_score": 0.78
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "SNAP 50K YOLO w/ confirmation bias",
+        "time": "2025-11-15T11:09:16",
+        "sentiment_score": 0.1735,
+        "influence_score": 0.61
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "The MAGA cracks are showing and the polls are starting to reflect that.",
+        "time": "2025-11-15T11:19:16",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "/r/Stocks Weekend Discussion Saturday - Nov 15, 2025",
+        "time": "2025-11-15T11:30:30",
+        "sentiment_score": 0.0,
+        "influence_score": 0.6
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Free GitHub version of TradingView Premium just got released, and it’s absolutely the same",
+        "time": "2025-11-15T11:34:36",
+        "sentiment_score": 0.3553,
+        "influence_score": 0.57
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "China’s Deflation Isn’t a Crisis — It’s the Price of Industrial Success: Falling prices in China look alarming to Western eyes. But this deflation reflects supply-side strength and industrial transformation, not economic collapse.",
+        "time": "2025-11-15T11:55:08",
+        "sentiment_score": 0.4076,
+        "influence_score": 0.53
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Previous post update",
+        "time": "2025-11-15T12:14:22",
+        "sentiment_score": -0.0833,
+        "influence_score": 0.53
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Warren Buffett's Berkshire Hathaway reveals $4.3B New Stake in Alphabet",
+        "time": "2025-11-15T13:02:26",
+        "sentiment_score": 0.0682,
+        "influence_score": 0.58
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "$DJT market cap $3.1B = financial assets of $3.1B. Purely driven by non-fundamentals, at what point will fundamentals keep it from going much lower?",
+        "time": "2025-11-15T13:25:39",
+        "sentiment_score": 0.005,
+        "influence_score": 0.73
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Welcome to doodoo land | $VOYG puts",
+        "time": "2025-11-15T13:33:38",
+        "sentiment_score": 0.6294,
+        "influence_score": 0.56
+      },
+      {
+        "source": "reddit",
+        "ticker": "GOLD",
+        "title": "Dealer’s Perspective — Goldbacks.",
+        "time": "2025-11-15T13:59:55",
+        "sentiment_score": 0.0,
+        "influence_score": 0.91
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Ford responsible for illegal emissions, leading to catastrophic health outcomes",
+        "time": "2025-11-15T14:10:56",
+        "sentiment_score": -0.4103,
+        "influence_score": 0.52
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "I Supported Trump, But My 43-Year-Old Grocery Store Is Bankrupt Because of His Tariffs and Policies",
+        "time": "2025-11-15T14:20:29",
+        "sentiment_score": -0.3214,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "What will it cost us if the skeptics right, and AI is just a bubble? Suppose lots of those data centers sit empty, like abandoned shopping malls?",
+        "time": "2025-11-15T14:21:36",
+        "sentiment_score": -0.1884,
+        "influence_score": 0.54
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "2026 4 coin Proof Sovereign set - Review of the new colour",
+        "time": "2025-11-15T15:58:52",
+        "sentiment_score": 0.0682,
+        "influence_score": 0.52
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Cramer says next week’s market hinges on Nvidia’s earnings report",
+        "time": "2025-11-15T16:12:39",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "If Trump Has Raked in Trillions, Where Is the Money?: Donald Trump claims that his tariffs have generated trillions of dollars in revenue and investments. Then why is the economy in such terrible shape, and why are Americans losing their jobs?",
+        "time": "2025-11-15T16:13:25",
+        "sentiment_score": -0.6118,
+        "influence_score": 0.99
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Nice little half added to the collection!",
+        "time": "2025-11-15T16:18:37",
+        "sentiment_score": 0.2717,
+        "influence_score": 0.54
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "“Already you’re seeing, if not outright disinvestment from the United States, more hedging of dollar-denominated investments,” Yellen says.",
+        "time": "2025-11-15T16:34:12",
+        "sentiment_score": 0.4607,
+        "influence_score": 0.54
+      },
+      {
+        "source": "reddit",
+        "ticker": "GOLD",
+        "title": "Some gold dudes.",
+        "time": "2025-11-15T16:35:26",
+        "sentiment_score": 0.0,
+        "influence_score": 0.55
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Nvidia’s Earnings and Share Price Trajectory",
+        "time": "2025-11-15T16:41:12",
+        "sentiment_score": 0.148,
+        "influence_score": 0.55
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Trump tariff relief in Canada",
+        "time": "2025-11-15T17:01:52",
+        "sentiment_score": 0.2384,
+        "influence_score": 0.58
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Trump orders himself to reduce tariffs he ordered",
+        "time": "2025-11-15T17:06:51",
+        "sentiment_score": 0.0,
+        "influence_score": 0.88
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "First Coin Show",
+        "time": "2025-11-15T17:21:34",
+        "sentiment_score": 0.125,
+        "influence_score": 0.55
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "AI is about to pop",
+        "time": "2025-11-15T17:25:28",
+        "sentiment_score": 0.0,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Earnings next week",
+        "time": "2025-11-15T17:47:02",
+        "sentiment_score": 0.0,
+        "influence_score": 0.76
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Trump rolls back tariffs on some food items, MAGA tries to frame it as a win for the economy",
+        "time": "2025-11-15T17:52:50",
+        "sentiment_score": 0.4096,
+        "influence_score": 0.56
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "How do you research biotech/biopharma companies? Looking for tools and information sources.",
+        "time": "2025-11-15T18:05:33",
+        "sentiment_score": 0.0,
+        "influence_score": 0.53
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "53% of Americans say that billionaires threaten democracy. They also would like to see limits on wealth accumulation.",
+        "time": "2025-11-15T18:08:05",
+        "sentiment_score": 0.2384,
+        "influence_score": 1.0
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Can anyone tell me the melt value on this?",
+        "time": "2025-11-15T18:25:25",
+        "sentiment_score": 0.17,
+        "influence_score": 0.55
+      },
+      {
+        "source": "reddit",
+        "ticker": "SPY",
+        "title": "How do you research high-risk sectors like biotech before taking a position?",
+        "time": "2025-11-15T18:27:24",
+        "sentiment_score": 0.1806,
+        "influence_score": 0.64
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "15 years of silver stacking",
+        "time": "2025-11-15T18:34:45",
+        "sentiment_score": 0.0,
+        "influence_score": 0.57
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Little 1/4 Joey",
+        "time": "2025-11-15T18:35:52",
+        "sentiment_score": -0.0938,
+        "influence_score": 0.62
+      },
+      {
+        "source": "reddit",
+        "ticker": "GOLD",
+        "title": "New Wealthsimple 1oz Gold Coin",
+        "time": "2025-11-15T18:41:54",
+        "sentiment_score": 0.0682,
+        "influence_score": 0.69
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Why buy standard Treasury bonds if TIPs yields are almost identical?",
+        "time": "2025-11-15T18:42:01",
+        "sentiment_score": 0.1012,
+        "influence_score": 0.65
+      },
+      {
+        "source": "reddit",
+        "ticker": "GOLD",
+        "title": "What would you do?",
+        "time": "2025-11-15T19:01:05",
+        "sentiment_score": 0.0,
+        "influence_score": 0.79
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "The math behind Trump’s 50-year mortgage gambit: Lower payments now, but almost double the long-term costs.",
+        "time": "2025-11-15T20:09:04",
+        "sentiment_score": -0.1766,
+        "influence_score": 0.66
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Found this beaut in a dirty basement at a moving sale. 10k",
+        "time": "2025-11-15T20:32:08",
+        "sentiment_score": -0.3386,
+        "influence_score": 0.59
+      },
+      {
+        "source": "reddit",
+        "ticker": "QQQ",
+        "title": "10K in QQQ puts",
+        "time": "2025-11-15T21:04:16",
+        "sentiment_score": 0.0,
+        "influence_score": 0.57
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Hello it's me 🥲",
+        "time": "2025-11-15T21:13:14",
+        "sentiment_score": 0.0,
+        "influence_score": 0.77
+      },
+      {
+        "source": "reddit",
+        "ticker": null,
+        "title": "Fed Governor Caught Trading Stocks While Setting Rates ... No Consequences Yet",
+        "time": "2025-11-15T21:16:03",
+        "sentiment_score": -0.148,
+        "influence_score": 0.53
+      }
+    ]
+  }
+}

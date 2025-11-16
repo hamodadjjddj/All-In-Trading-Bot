@@ -1,0 +1,16 @@
+--> even if market news are more than gold and others do not let llm halocinate and give market more
+scoring / weight or something like that, rather understanding the market more since its the 
+first gold competetor.
+
+--> the llm i need to test it first do you understad this data well, units, numbers, meanings, fractions,
+everything data needed
+
+--> economic calender mo, will fetch all news starting from the ongoing date all the way back 30 days
+only for usd news, medium and high
+
+--> fetch last thirty days daily candles of gold and spy to see its relation to news so the structure will be
+like 15/10/2025 (news - social media - economic calender - daily ohclv - fundamentals). meaning it
+will be a script will run the five scripts at ones, have access to all data and can read its contesnts,
+make a news json file that follow that structure above.
+
+--> when trading smaller time frrames we are going to take a look for depth of the market.
