@@ -1,0 +1,53 @@
+November 21, 2025
+
+ECONOMIC EVENTS:
+At 15:45, USD S&P Global Manufacturing PMI  (Nov) was released. Actual: 51.9, missing forecast of 52.0 and falling from previous 52.5.
+At 15:45, USD S&P Global Composite PMI  (Nov) was released. Actual: 54.8, beating forecast of 54.5 and rising from previous 54.6.
+At 15:45, USD S&P Global Services PMI  (Nov) was released. Actual: 55.0, beating forecast of 54.6 and rising from previous 54.8.
+At 16:00, USD Michigan 1-Year Inflation Expectations  (Nov) was released. Actual: 4.5%, missing forecast of 4.7% and falling from previous 4.6%.
+At 16:00, USD Michigan 5-Year Inflation Expectations  (Nov) was released. Actual: 3.4%, missing forecast of 3.6% and falling from previous 3.9%.
+At 16:00, USD Michigan Consumer Expectations  (Nov) was released. Actual: 51.0, beating forecast of 49.0 and rising from previous 50.3.
+At 16:00, USD Michigan Consumer Sentiment  (Nov) was released. Actual: 51.0, beating forecast of 50.3 and falling from previous 53.6.
+At 18:00, USD Atlanta Fed GDPNow  (Q4) was released. Actual: 4.2%, matching forecast of 4.2%
+At 19:00, USD U.S. Baker Hughes Oil Rig Count was released. Actual: 419, beating forecast of 418 and rising from previous 417.
+At 19:00, USD U.S. Baker Hughes Total Rig Count was released. Actual: 554 and rising from previous 549.
+At 21:30, USD CFTC Crude Oil speculative net positions was released. Actual: 74.3K and falling from previous 103.3K.
+At 21:30, USD CFTC Gold speculative net positions was released. Actual: 232.0K and falling from previous 252.9K.
+At 21:30, USD CFTC Nasdaq 100 speculative net positions was released. Actual: 43.3K and rising from previous 41.0K.
+At 21:30, USD CFTC S&P 500 speculative net positions was released. Actual: -144.1K and falling from previous -136.7K.
+
+FUNDAMENTALS:
+10-Year Treasury yield: 4.06%. High-yield credit spread: 3.19%. GLD ETF: closed at $374.27, volume 13,194,600. IAU ETF: closed at $76.61, volume 10,289,900.
+
+NEWS HIGHLIGHTS:
+
+GOLD (3 items):
+  • Gold Is Crushing the S&P 500, the Nasdaq, and Even Nvidia This Year. Here's a Simple Way to Own It. [GLD]
+  • ETFs to Play Amid Rising AI Bubble Concerns [GLD]
+  • China Is Driving This Years Gold ETF Boom [IAU]
+
+MARKET (10 items):
+  • Goldman Sachs Just Delivered Bad News for U.S. Investors ... Sort Of. Here's What You Need to Know. [SPY]
+  • Inside the Recent Strength in Biotech ETFs [SPY]
+  • Stock Market Today: Dow Bounces On Rate-Cut Hopes After Sell-Off; Nvidia, Palantir Switch Gears (Live Coverage) [SPY]
+  • Market Anxiety Picked Up Thursday [SPY]
+  • Stock Market Today: Dow Up On Rate-Cut Hopes After Sell-Off; Nvidia, Palantir, Tesla Rebound (Live Coverage) [SPY]
+  • Pre-markets Try Again, Begin Session in the Green [SPY]
+  • Stock Market Today: Dow Rallies Cautiously On Rate-Cut Hopes; Nvidia, Palantir, AMD Extend Losses (Live Coverage) [QQQ]
+  • U.S. Gaming Sales Rise 3% As Switch 2 Surges [QQQ]
+  • Trump Lifts 40% Tariffs On Brazilian Food Imports [QQQ]
+  • What Will Happen To Microstrategy If Bitcoin Falls Under $74,000? [QQQ]
+
+[Total: 13 news items]
+
+SOCIAL SENTIMENT:
+
+r/SPY (1 posts):
+  • Great day spy printed
+
+r/japan (1 posts):
+  • Taiwan lifts import curbs on Japanese food as Tokyo spars with Beijing
+
+[Total: 2 posts tracked]
+
+2025-12-07 22:00:19

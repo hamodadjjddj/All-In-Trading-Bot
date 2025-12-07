@@ -82,122 +82,100 @@ class InflationDataFormatter:
     
     @staticmethod
     def format(inflation_data: Dict[str, Any]) -> Optional[str]:
-        """Convert inflation data to natural language paragraph format"""
+        """Convert inflation data to simple, readable format"""
         if not inflation_data:
             return None
         
-        generated_at = inflation_data.get("generated_at", "")
-        data_source = inflation_data.get("data_source", "Unknown source")
         indicators = inflation_data.get("indicators", {})
         
         if not indicators:
             return "No inflation data available for this period."
         
-        # Parse generation date
-        try:
-            gen_date = datetime.fromisoformat(generated_at.replace('Z', '+00:00'))
-            date_str = gen_date.strftime("%B %d, %Y at %H:%M UTC")
-        except:
-            date_str = "an unknown date"
+        sections = []
         
-        paragraphs = []
+        # Inflation Indicators
+        inflation_items = []
         
-        # Opening paragraph
-        paragraphs.append(
-            f"This economic snapshot was generated on {date_str}, "
-            f"compiled from {data_source}. "
-            f"The following indicators represent the most recent monthly data available."
-        )
-        
-        # Inflation indicators paragraph
-        inflation_parts = []
-        
-        # CPI
         if "CPI" in indicators and indicators["CPI"].get("data"):
-            cpi_data = indicators["CPI"]["data"][-1]  # Get latest
+            cpi_data = indicators["CPI"]["data"][-1]
             cpi_val = DataFormatter.parse_numeric(cpi_data.get("value"))
-            cpi_date = cpi_data.get("date", "unknown")
+            cpi_date = cpi_data.get("date", "")
             if cpi_val is not None:
                 try:
                     date_obj = datetime.fromisoformat(cpi_date)
                     month_str = date_obj.strftime("%B %Y")
-                    inflation_parts.append(f"the Consumer Price Index (CPI) stood at {cpi_val:.2f} in {month_str}")
+                    inflation_items.append(f"Consumer Price Index (CPI) stood at {cpi_val:.2f} in {month_str}.")
                 except:
-                    inflation_parts.append(f"the Consumer Price Index (CPI) stood at {cpi_val:.2f}")
+                    inflation_items.append(f"Consumer Price Index (CPI) stood at {cpi_val:.2f}.")
         
-        # PCE
         if "PCE" in indicators and indicators["PCE"].get("data"):
             pce_data = indicators["PCE"]["data"][-1]
             pce_val = DataFormatter.parse_numeric(pce_data.get("value"))
-            pce_date = pce_data.get("date", "unknown")
+            pce_date = pce_data.get("date", "")
             if pce_val is not None:
                 try:
                     date_obj = datetime.fromisoformat(pce_date)
                     month_str = date_obj.strftime("%B %Y")
-                    inflation_parts.append(f"Personal Consumption Expenditures (PCE) registered at {pce_val:.2f} for {month_str}")
+                    inflation_items.append(f"Personal Consumption Expenditures (PCE) was {pce_val:.2f} in {month_str}.")
                 except:
-                    inflation_parts.append(f"Personal Consumption Expenditures (PCE) registered at {pce_val:.2f}")
+                    inflation_items.append(f"Personal Consumption Expenditures (PCE) was {pce_val:.2f}.")
         
-        # PPI
         if "PPI" in indicators and indicators["PPI"].get("data"):
             ppi_data = indicators["PPI"]["data"][-1]
             ppi_val = DataFormatter.parse_numeric(ppi_data.get("value"))
+            ppi_date = ppi_data.get("date", "")
             if ppi_val is not None:
-                inflation_parts.append(f"the Producer Price Index (PPI) came in at {ppi_val:.2f}")
+                try:
+                    date_obj = datetime.fromisoformat(ppi_date)
+                    month_str = date_obj.strftime("%B %Y")
+                    inflation_items.append(f"Producer Price Index (PPI) was {ppi_val:.2f} in {month_str}.")
+                except:
+                    inflation_items.append(f"Producer Price Index (PPI) was {ppi_val:.2f}.")
         
-        if inflation_parts:
-            paragraphs.append(
-                f"On the inflation front, {', '.join(inflation_parts[:-1])}{', and ' if len(inflation_parts) > 1 else ''}{inflation_parts[-1] if inflation_parts else ''}. "
-                f"These indices collectively provide insight into price pressures across consumer, producer, and expenditure levels."
-            )
+        if inflation_items:
+            sections.append("INFLATION INDICATORS:\n" + " ".join(inflation_items))
         
-        # Employment paragraph
-        employment_parts = []
+        # Employment
+        employment_items = []
         
-        # Unemployment
         if "UNEMPLOYMENT" in indicators and indicators["UNEMPLOYMENT"].get("data"):
             unemp_data = indicators["UNEMPLOYMENT"]["data"][-1]
             unemp_val = DataFormatter.parse_numeric(unemp_data.get("value"))
-            unemp_date = unemp_data.get("date", "unknown")
+            unemp_date = unemp_data.get("date", "")
             if unemp_val is not None:
                 try:
                     date_obj = datetime.fromisoformat(unemp_date)
                     month_str = date_obj.strftime("%B %Y")
-                    employment_parts.append(f"the unemployment rate was {unemp_val:.1f}% in {month_str}")
+                    employment_items.append(f"Unemployment rate was {unemp_val:.1f}% in {month_str}.")
                 except:
-                    employment_parts.append(f"the unemployment rate was {unemp_val:.1f}%")
+                    employment_items.append(f"Unemployment rate was {unemp_val:.1f}%.")
         
-        # NFP
         if "NFP" in indicators and indicators["NFP"].get("data"):
             nfp_data = indicators["NFP"]["data"][-1]
             nfp_val = DataFormatter.parse_numeric(nfp_data.get("value"))
             if nfp_val is not None:
-                employment_parts.append(f"Non-Farm Payrolls totaled {nfp_val:,.0f} thousand jobs")
+                employment_items.append(f"Non-Farm Payrolls totaled {nfp_val:,.0f}K jobs.")
         
-        if employment_parts:
-            paragraphs.append(
-                f"Labor market conditions showed {', while '.join(employment_parts)}. "
-                f"These employment metrics offer a window into the health of the job market and broader economic activity."
-            )
+        if employment_items:
+            sections.append("EMPLOYMENT:\n" + " ".join(employment_items))
         
-        # Monetary policy and financial conditions paragraph
-        monetary_parts = []
+        # Monetary Policy
+        monetary_items = []
         
-        # Fed Funds
         if "FEDFUNDS" in indicators and indicators["FEDFUNDS"].get("data"):
             fedfunds_data = indicators["FEDFUNDS"]["data"]
             if fedfunds_data:
                 latest = fedfunds_data[-1]
                 latest_val = DataFormatter.parse_numeric(latest.get("value"))
-                latest_date = latest.get("date", "unknown")
+                latest_date = latest.get("date", "")
                 
                 if latest_val is not None:
                     try:
                         date_obj = datetime.fromisoformat(latest_date)
                         month_str = date_obj.strftime("%B %Y")
-                        monetary_parts.append(f"the Federal Funds Rate stood at {latest_val:.2f}% as of {month_str}")
+                        monetary_items.append(f"Federal Funds Rate was {latest_val:.2f}% as of {month_str}.")
                     except:
-                        monetary_parts.append(f"the Federal Funds Rate stood at {latest_val:.2f}%")
+                        monetary_items.append(f"Federal Funds Rate was {latest_val:.2f}%.")
                 
                 # Show trend if multiple data points
                 if len(fedfunds_data) > 1:
@@ -206,53 +184,37 @@ class InflationDataFormatter:
                     if first_val is not None and latest_val is not None:
                         change = latest_val - first_val
                         if abs(change) > 0.01:
-                            trend = "declining" if change < 0 else "rising"
-                            monetary_parts.append(f"showing a {trend} trend of {abs(change):.2f} percentage points over the observed period")
+                            trend = "down" if change < 0 else "up"
+                            monetary_items.append(f"Rate moved {trend} {abs(change):.2f} percentage points during this period.")
         
-        # M2 Money Supply
         if "M2_MONEY_SUPPLY" in indicators and indicators["M2_MONEY_SUPPLY"].get("data"):
             m2_data = indicators["M2_MONEY_SUPPLY"]["data"][-1]
             m2_val = DataFormatter.parse_numeric(m2_data.get("value"))
             if m2_val is not None:
-                monetary_parts.append(f"M2 money supply reached ${m2_val:,.1f} billion")
+                monetary_items.append(f"M2 money supply was ${m2_val:,.1f} billion.")
         
-        if monetary_parts:
-            paragraphs.append(
-                f"In terms of monetary policy and money supply, {', and '.join(monetary_parts)}. "
-                f"These indicators reflect the Federal Reserve's stance and liquidity conditions in the financial system."
-            )
+        if monetary_items:
+            sections.append("MONETARY POLICY:\n" + " ".join(monetary_items))
         
-        # Economic activity paragraph
-        activity_parts = []
+        # Economic Activity
+        activity_items = []
         
-        # Retail Sales
         if "RETAIL_SALES" in indicators and indicators["RETAIL_SALES"].get("data"):
             retail_data = indicators["RETAIL_SALES"]["data"][-1]
             retail_val = DataFormatter.parse_numeric(retail_data.get("value"))
             if retail_val is not None:
-                activity_parts.append(f"retail sales totaled ${retail_val:,.0f} million")
+                activity_items.append(f"Retail sales totaled ${retail_val:,.0f} million.")
         
-        # Industrial Production
         if "INDUSTRIAL_PROD" in indicators and indicators["INDUSTRIAL_PROD"].get("data"):
             ind_data = indicators["INDUSTRIAL_PROD"]["data"][-1]
             ind_val = DataFormatter.parse_numeric(ind_data.get("value"))
             if ind_val is not None:
-                activity_parts.append(f"the industrial production index registered at {ind_val:.2f}")
+                activity_items.append(f"Industrial production index was {ind_val:.2f}.")
         
-        if activity_parts:
-            paragraphs.append(
-                f"Economic activity indicators revealed that {' while '.join(activity_parts)}. "
-                f"These measures provide insight into consumer spending strength and manufacturing output."
-            )
+        if activity_items:
+            sections.append("ECONOMIC ACTIVITY:\n" + " ".join(activity_items))
         
-        # Closing paragraph
-        if len(paragraphs) > 1:
-            paragraphs.append(
-                f"Together, these economic indicators paint a comprehensive picture of the current macroeconomic environment, "
-                f"encompassing inflation dynamics, labor market health, monetary policy positioning, and real economic activity."
-            )
-        
-        return "\n\n".join(paragraphs) if paragraphs else "No processable economic data available."
+        return "\n\n".join(sections) if sections else "No economic data available."
 
 
 class XAUUSDFormatter:
@@ -635,14 +597,18 @@ class SnapshotConverter:
         """Convert entire snapshot to natural language summary"""
         
         if is_inflation_file:
-            # Special handling for inflation_data.json
-            title = "MONTHLY ECONOMIC INDICATORS OVERVIEW"
-            date_str = ""
+            # Simple handling for inflation_data.json
+            generated_at = snapshot_data.get("generated_at", "")
+            
+            try:
+                gen_date = datetime.fromisoformat(generated_at.replace('Z', '+00:00'))
+                date_header = gen_date.strftime("%B %d, %Y")
+            except:
+                date_header = "Monthly Indicators"
             
             sections = []
-            sections.append(f"{'='*70}")
-            sections.append(f"{title}")
-            sections.append(f"{'='*70}\n")
+            sections.append(date_header)
+            sections.append("")
             
             formatted = InflationDataFormatter.format(snapshot_data)
             if formatted:
@@ -650,9 +616,8 @@ class SnapshotConverter:
             else:
                 sections.append("No economic data available.")
             
-            sections.append("\n" + "="*70)
-            sections.append(f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-            sections.append("="*70)
+            sections.append("")
+            sections.append(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
             
             return "\n".join(sections)
         
@@ -660,17 +625,16 @@ class SnapshotConverter:
         date = snapshot_data.get("date", "Unknown Date")
         data = snapshot_data.get("data", {})
         
-        # Parse date
+        # Parse date for header
         try:
             date_obj = datetime.fromisoformat(date)
-            formatted_date = date_obj.strftime("%B %d, %Y (%A)")
+            date_header = date_obj.strftime("%B %d, %Y")
         except:
-            formatted_date = date
+            date_header = date
         
         sections = []
-        sections.append(f"{'='*70}")
-        sections.append(f"MARKET SUMMARY FOR {formatted_date.upper()}")
-        sections.append(f"{'='*70}\n")
+        sections.append(date_header)
+        sections.append("")
         
         # Process each category
         formatters = [
@@ -694,10 +658,8 @@ class SnapshotConverter:
                     sections.append(f"{title}: [Error processing data: {str(e)}]")
                     sections.append("")
         
-        # Footer
-        sections.append("="*70)
-        sections.append(f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-        sections.append("="*70)
+        # Footer with timestamp only
+        sections.append(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
         
         return "\n".join(sections)
 

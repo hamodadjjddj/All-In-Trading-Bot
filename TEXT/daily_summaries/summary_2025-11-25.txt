@@ -1,0 +1,58 @@
+November 25, 2025
+
+ECONOMIC EVENTS:
+At 14:15, USD ADP Employment Change Weekly was released. Actual: -13.50K and falling from previous -2.50K.
+At 14:30, USD Core PPI (MoM)  (Sep) was released. Actual: 0.1%, missing forecast of 0.2% and rising from previous -0.1%.
+At 14:30, USD Core Retail Sales (MoM)  (Sep) was released. Actual: 0.3%, matching forecast of 0.3% and falling from previous 0.6%.
+At 14:30, USD PPI (MoM)  (Sep) was released. Actual: 0.3%, matching forecast of 0.3% and rising from previous -0.1%.
+At 14:30, USD Retail Control (MoM)  (Sep) was released. Actual: -0.1%, missing forecast of 0.3% and falling from previous 0.6%.
+At 14:30, USD Retail Sales (MoM)  (Sep) was released. Actual: 0.2%, missing forecast of 0.4% and falling from previous 0.6%.
+At 15:00, USD S&P/CS HPI Composite - 20 n.s.a. (YoY)  (Sep) was released. Actual: 1.4%, matching forecast of 1.4% and falling from previous 1.6%.
+At 15:00, USD S&P/CS HPI Composite - 20 n.s.a. (MoM)  (Sep) was released. Actual: -0.5% and rising from previous -0.6%.
+At 16:00, USD Business Inventories (MoM)  (Aug) was released. Actual: 0.0%, matching forecast of 0.0% and falling from previous 0.1%.
+At 16:00, USD CB Consumer Confidence  (Nov) was released. Actual: 88.7, missing forecast of 93.5 and falling from previous 95.5.
+At 16:00, USD Pending Home Sales (MoM)  (Oct) was released. Actual: 1.9%, beating forecast of 0.5% and rising from previous 0.1%.
+At 16:00, USD Retail Inventories Ex Auto  (Aug) was released. Actual: 0.0%, missing forecast of 0.3% and falling from previous 0.1%.
+At 17:00, USD Atlanta Fed GDPNow  (Q4) was released. Actual: 4.0%, missing forecast of 4.2% and falling from previous 4.2%.
+At 19:00, USD 5-Year Note Auction was released. Actual: 3.562% and falling from previous 3.625%.
+At 20:00, USD Federal Budget Balance  (Oct) was released. Actual: -284.0B, missing forecast of -223.4B and falling from previous 198.0B.
+At 21:30, USD CFTC Crude Oil speculative net positions was released. Actual: 61.0K and falling from previous 74.3K.
+At 21:30, USD CFTC Gold speculative net positions was released. Actual: 203.9K and falling from previous 232.0K.
+At 21:30, USD CFTC Nasdaq 100 speculative net positions was released. Actual: 52.8K and rising from previous 43.3K.
+At 21:30, USD CFTC S&P 500 speculative net positions was released. Actual: -165.7K and falling from previous -144.1K.
+At 23:30, USD API Weekly Crude Oil Stock was released. Actual: -1.900M and falling from previous 4.400M.
+
+FUNDAMENTALS:
+10-Year Treasury yield: 4.01%. High-yield credit spread: 3.10%. GLD ETF: closed at $380.08, volume 10,462,800. IAU ETF: closed at $77.83, volume 12,677,900.
+
+NEWS HIGHLIGHTS:
+
+GOLD (1 items):
+  • Better Buy for 2026: An S&P 500 Index Fund, Gold, or Bitcoin? [GLD]
+
+MARKET (4 items):
+  • Is Dow Jones ETF Better-Placed Than S&P 500 & Nasdaq? [SPY]
+  • TrustLinq Launches Swiss-Regulated Crypto-to-Fiat Payment Platform to boost Cryptocurrency Adoption [SPY]
+  • Trump Trade: White House pauses EO preempting state laws on AI [SPY]
+  • Will the S&P 500 Rally in December? These 3 Signals Point to a Big Move Ahead [SPY]
+
+[Total: 5 news items]
+
+SOCIAL SENTIMENT:
+
+r/SPY (1 posts):
+  • First 1K in a single trade!
+
+r/StockMarket (2 posts):
+  • Bessent Calls for Simplified Fed as He Ends Candidate Interviews
+  • Google just became an existential threat to OpenAI.
+
+r/japan (4 posts):
+  • U.S. Marine says has no memory of sexual assault at Okinawa base in trial
+  • Japan wanted fewer tourists. Now China’s boycott is doing the job for them
+  • Foreign population in 10 Japan prefectures more than doubles in decade - The Mainichi
+  • Japan weighs extending 5-year residency requirement for naturalization
+
+[Total: 7 posts tracked]
+
+2025-12-07 22:00:19

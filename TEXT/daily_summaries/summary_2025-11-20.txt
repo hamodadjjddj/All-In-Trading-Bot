@@ -1,0 +1,68 @@
+November 20, 2025
+
+GOLD PRICE ACTION:
+Gold (XAU/USD) opened at $4,077.26, reached a high of $4,109.81, dipped to a low of $4,038.61, and closed at $4,057.70. This represents a daily loss of -19.56 (-0.48%) with an intraday range of 71.20.
+
+ECONOMIC EVENTS:
+At 14:24, USD Initial Jobless Claims was released. Actual: 224K, beating forecast of 223K and rising from previous 219K.
+At 14:25, USD Initial Jobless Claims was released. Actual: 235K, beating forecast of 227K and rising from previous 224K.
+At 14:26, USD Initial Jobless Claims was released. Actual: 220K and falling from previous 235K.
+At 14:27, USD Initial Jobless Claims was released. Actual: 220K and falling from previous 232K.
+At 14:28, USD Initial Jobless Claims was released. Actual: 229K and rising from previous 220K.
+At 14:29, USD Initial Jobless Claims was released. Actual: 228K and falling from previous 229K.
+At 14:30, USD Average Hourly Earnings (MoM)  (Sep) was released. Actual: 0.2%, missing forecast of 0.3% and falling from previous 0.4%.
+At 14:30, USD Average Hourly Earnings (YoY) (YoY)  (Sep) was released. Actual: 3.8%, beating forecast of 3.7%
+At 14:30, USD Initial Jobless Claims was released. Actual: 220K and falling from previous 228K.
+At 14:30, USD Nonfarm Payrolls  (Sep) was released. Actual: 119K, beating forecast of 53K and rising from previous -4K.
+At 14:30, USD Participation Rate  (Sep) was released. Actual: 62.4% and rising from previous 62.3%.
+At 14:30, USD Philadelphia Fed Manufacturing Index  (Nov) was released. Actual: -1.7, missing forecast of 1.0 and rising from previous -12.8.
+At 14:30, USD Philly Fed Employment  (Nov) was released. Actual: 6.0 and rising from previous 4.6.
+At 14:30, USD Private Nonfarm Payrolls  (Sep) was released. Actual: 97K, beating forecast of 62K and rising from previous 18K.
+At 14:30, USD U6 Unemployment Rate  (Sep) was released. Actual: 8.0% and falling from previous 8.1%.
+At 14:30, USD Unemployment Rate  (Sep) was released. Actual: 4.4%, beating forecast of 4.3% and rising from previous 4.3%.
+At 16:00, USD Existing Home Sales  (Oct) was released. Actual: 4.10M, beating forecast of 4.08M and rising from previous 4.05M.
+At 16:00, USD Existing Home Sales (MoM)  (Oct) was released. Actual: 1.2% and falling from previous 1.3%.
+At 19:00, USD 10-Year TIPS Auction was released. Actual: 1.843% and rising from previous 1.734%.
+
+FUNDAMENTALS:
+10-Year Treasury yield: 4.10%. High-yield credit spread: 3.17%. GLD ETF: closed at $374.85, volume 10,506,500. IAU ETF: closed at $76.78, volume 8,518,700.
+
+TECHNICAL ANALYSIS:
+US Dollar Index (DXY): trading at 100.10 with bullish bias. RSI: 58.62 (bullish momentum). MACD: 0.08 (neutral momentum).
+S&P 500: trading at 6,605.05 with bearish bias. RSI: 38.20 (bearish momentum). MACD: 3.17 (positive momentum).
+VIX (Volatility Index): trading at 22.12 with bullish bias. RSI: 63.13 (bullish momentum). MACD: -0.01 (neutral momentum).
+Gold (XAU/USD): trading at $4,057.70 with bearish bias. RSI: 45.66 (neutral momentum). MACD: -4.38 (negative momentum).
+
+NEWS HIGHLIGHTS:
+
+GOLD (1 items):
+  • Where to Put Your Gold Money Now That The Market Is Getting Nervous [GLD]
+
+MARKET (9 items):
+  • Should iShares Russell 2000 ETF (IWM) Be on Your Investing Radar? [IWM]
+  • AI and HPC Bitcoin Miners Surge Pre Market Following Stellar NVIDIA Earnings [QQQ]
+  • The Zacks Analyst Blog Highlights MS, VOO, SPY, IVV, SPYM, RSP, EQ and EQWL [SPY]
+  • Could This Be One of the Smartest ETFs to Buy Right Now? [QQQ]
+  • Stock Market Today: Dow Rallies 600 Points As Nvidia Surges On Earnings; Jobs Report Surprises (Live Coverage) [SPY]
+  • Stock Market Today: Dow Up Nearly 700 Points As Nvidia Earnings Impress; Broadcom Hits Entry (Live Coverage) [SPY]
+  • Stock Market Today: Dow Turns Lower As Nvidia Loses Post-Earnings Surge; Oklo Dives (Live Coverage) [QQQ]
+  • Hacken Audit Validates QANplatforms Quantum Security Protocol [SPY]
+  • Even Nvidia can't help a stock market that's in real trouble [SPY]
+
+[Total: 10 news items]
+
+SOCIAL SENTIMENT:
+
+r/SPY (2 posts):
+  • Like flipping a coin? No, when the trend feels off, U should go the opposite way Successfully caught the Put for a 547% gain
+  • Started with $500 Monday
+
+r/japan (4 posts):
+  • Japan says population crisis is "biggest problem"
+  • Japan edges towards hosting nuclear weapons - ASPI
+  • Japan to Charge Foreigners More for Residence Permits, Looking to Align with Western Countries
+  • Four Chinese Nationals Indicted for Poaching 107 Ryukyu Black-Breasted Leaf Turtles, a Protected Natural Monument — Naha Prosecutors (Ryukyu Shimpo)
+
+[Total: 6 posts tracked]
+
+2025-12-07 22:00:19
