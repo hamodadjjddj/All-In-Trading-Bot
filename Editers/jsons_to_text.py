@@ -2,353 +2,709 @@
 import json
 from pathlib import Path
 from datetime import datetime
+from typing import Any, Dict, List, Optional, Union
 
-INPUT_FOLDER = "daily_snapshots"
-OUTPUT_FOLDER = "daily_summaries"
+INPUT_FOLDER = "TEXT/daily_snapshots"
+OUTPUT_FOLDER = "TEXT/daily_summaries"
 
-def format_number(num, prefix="$", decimals=2):
-    """Format number with prefix and proper decimals"""
-    if num is None:
-        return "N/A"
-    return f"{prefix}{num:,.{decimals}f}"
-
-def calculate_change(open_price, close_price):
-    """Calculate absolute and percentage change"""
-    if open_price is None or close_price is None:
-        return None, None
-    change = close_price - open_price
-    pct_change = (change / open_price) * 100
-    return change, pct_change
-
-def format_xauusd(data):
-    """Convert XAUUSD data to natural language"""
-    open_p = data.get("open")
-    high = data.get("high")
-    low = data.get("low")
-    close = data.get("close")
+class DataFormatter:
+    """Handles formatting of various data types"""
     
-    if not all([open_p, high, low, close]):
+    @staticmethod
+    def format_number(num: Optional[Union[int, float]], prefix: str = "$", decimals: int = 2) -> str:
+        """Format number with prefix and proper decimals"""
+        if num is None:
+            return "N/A"
+        try:
+            return f"{prefix}{num:,.{decimals}f}"
+        except (ValueError, TypeError):
+            return str(num)
+    
+    @staticmethod
+    def calculate_change(open_price: Optional[float], close_price: Optional[float]) -> tuple:
+        """Calculate absolute and percentage change"""
+        if open_price is None or close_price is None or open_price == 0:
+            return None, None
+        try:
+            change = close_price - open_price
+            pct_change = (change / open_price) * 100
+            return change, pct_change
+        except (ValueError, TypeError, ZeroDivisionError):
+            return None, None
+    
+    @staticmethod
+    def parse_numeric(value: Any) -> Optional[float]:
+        """Safely parse numeric value from various formats"""
+        if value is None:
+            return None
+        if isinstance(value, (int, float)):
+            return float(value)
+        if isinstance(value, str):
+            try:
+                # Remove common characters and parse
+                cleaned = value.replace('%', '').replace(',', '').replace('$', '').replace('B', '').replace('M', '').replace('K', '').strip()
+                return float(cleaned)
+            except ValueError:
+                return None
         return None
     
-    change, pct_change = calculate_change(open_p, close)
-    range_val = high - low
+    @staticmethod
+    def interpret_rsi(rsi: Optional[float]) -> str:
+        """Interpret RSI value"""
+        if rsi is None:
+            return "no RSI data"
+        if rsi < 30:
+            return "oversold conditions, potential buying opportunity"
+        elif rsi < 45:
+            return "bearish momentum"
+        elif rsi < 55:
+            return "neutral momentum"
+        elif rsi < 70:
+            return "bullish momentum"
+        else:
+            return "overbought conditions, potential reversal risk"
     
-    # Determine direction
-    if change > 0:
-        direction = "gain"
-        change_text = f"+{format_number(change, '', 2)}"
-        pct_text = f"+{pct_change:.2f}%"
-    elif change < 0:
-        direction = "loss"
-        change_text = format_number(change, '', 2)
-        pct_text = f"{pct_change:.2f}%"
-    else:
-        direction = "no change"
-        change_text = format_number(0, '', 2)
-        pct_text = "0.00%"
-    
-    text = f"Gold (XAU/USD) opened at {format_number(open_p)}, reached a high of {format_number(high)}, "
-    text += f"dipped to a low of {format_number(low)}, and closed at {format_number(close)}. "
-    text += f"This represents a daily {direction} of {change_text} ({pct_text}) with an intraday range of {format_number(range_val, '', 2)}."
-    
-    return text
+    @staticmethod
+    def interpret_macd(macd: Optional[float]) -> str:
+        """Interpret MACD value"""
+        if macd is None:
+            return "no MACD data"
+        if abs(macd) < 0.5:
+            return "neutral momentum"
+        elif macd > 0:
+            return "positive momentum"
+        else:
+            return "negative momentum"
 
-def format_economic_events(events):
-    """Convert economic events to natural language"""
-    if not events:
-        return None
+
+class InflationDataFormatter:
+    """Formats monthly inflation and economic indicators"""
     
-    lines = []
-    for event in events:
-        time = event.get("time", "")
-        currency = event.get("currency", "")
-        event_name = event.get("event", "")
-        actual = event.get("actual", "")
-        forecast = event.get("forecast", "")
-        previous = event.get("previous", "")
+    @staticmethod
+    def format(inflation_data: Dict[str, Any]) -> Optional[str]:
+        """Convert inflation data to natural language paragraph format"""
+        if not inflation_data:
+            return None
         
-        # Build event description
-        text = f"At {time}, the {currency} {event_name} was released."
+        generated_at = inflation_data.get("generated_at", "")
+        data_source = inflation_data.get("data_source", "Unknown source")
+        indicators = inflation_data.get("indicators", {})
         
-        if actual:
-            text += f" The actual figure came in at {actual}"
-            
-            # Compare to forecast if available
-            if forecast:
+        if not indicators:
+            return "No inflation data available for this period."
+        
+        # Parse generation date
+        try:
+            gen_date = datetime.fromisoformat(generated_at.replace('Z', '+00:00'))
+            date_str = gen_date.strftime("%B %d, %Y at %H:%M UTC")
+        except:
+            date_str = "an unknown date"
+        
+        paragraphs = []
+        
+        # Opening paragraph
+        paragraphs.append(
+            f"This economic snapshot was generated on {date_str}, "
+            f"compiled from {data_source}. "
+            f"The following indicators represent the most recent monthly data available."
+        )
+        
+        # Inflation indicators paragraph
+        inflation_parts = []
+        
+        # CPI
+        if "CPI" in indicators and indicators["CPI"].get("data"):
+            cpi_data = indicators["CPI"]["data"][-1]  # Get latest
+            cpi_val = DataFormatter.parse_numeric(cpi_data.get("value"))
+            cpi_date = cpi_data.get("date", "unknown")
+            if cpi_val is not None:
                 try:
-                    actual_num = float(actual.replace('%', '').replace(',', ''))
-                    forecast_num = float(forecast.replace('%', '').replace(',', ''))
-                    
-                    if actual_num > forecast_num:
-                        text += f", beating the forecast of {forecast}"
-                    elif actual_num < forecast_num:
-                        text += f", missing the forecast of {forecast}"
-                    else:
-                        text += f", matching the forecast of {forecast}"
+                    date_obj = datetime.fromisoformat(cpi_date)
+                    month_str = date_obj.strftime("%B %Y")
+                    inflation_parts.append(f"the Consumer Price Index (CPI) stood at {cpi_val:.2f} in {month_str}")
                 except:
-                    text += f" (forecast: {forecast})"
-            
-            # Compare to previous if available
-            if previous:
-                try:
-                    actual_num = float(actual.replace('%', '').replace(',', ''))
-                    previous_num = float(previous.replace('%', '').replace(',', ''))
-                    
-                    if actual_num > previous_num:
-                        text += f" and rising from the previous {previous}."
-                    elif actual_num < previous_num:
-                        text += f" and falling from the previous {previous}."
-                    else:
-                        text += f" and unchanged from the previous {previous}."
-                except:
-                    text += f" (previous: {previous})."
-            else:
-                text += "."
+                    inflation_parts.append(f"the Consumer Price Index (CPI) stood at {cpi_val:.2f}")
         
-        lines.append(text)
-    
-    return "\n".join(lines)
+        # PCE
+        if "PCE" in indicators and indicators["PCE"].get("data"):
+            pce_data = indicators["PCE"]["data"][-1]
+            pce_val = DataFormatter.parse_numeric(pce_data.get("value"))
+            pce_date = pce_data.get("date", "unknown")
+            if pce_val is not None:
+                try:
+                    date_obj = datetime.fromisoformat(pce_date)
+                    month_str = date_obj.strftime("%B %Y")
+                    inflation_parts.append(f"Personal Consumption Expenditures (PCE) registered at {pce_val:.2f} for {month_str}")
+                except:
+                    inflation_parts.append(f"Personal Consumption Expenditures (PCE) registered at {pce_val:.2f}")
+        
+        # PPI
+        if "PPI" in indicators and indicators["PPI"].get("data"):
+            ppi_data = indicators["PPI"]["data"][-1]
+            ppi_val = DataFormatter.parse_numeric(ppi_data.get("value"))
+            if ppi_val is not None:
+                inflation_parts.append(f"the Producer Price Index (PPI) came in at {ppi_val:.2f}")
+        
+        if inflation_parts:
+            paragraphs.append(
+                f"On the inflation front, {', '.join(inflation_parts[:-1])}{', and ' if len(inflation_parts) > 1 else ''}{inflation_parts[-1] if inflation_parts else ''}. "
+                f"These indices collectively provide insight into price pressures across consumer, producer, and expenditure levels."
+            )
+        
+        # Employment paragraph
+        employment_parts = []
+        
+        # Unemployment
+        if "UNEMPLOYMENT" in indicators and indicators["UNEMPLOYMENT"].get("data"):
+            unemp_data = indicators["UNEMPLOYMENT"]["data"][-1]
+            unemp_val = DataFormatter.parse_numeric(unemp_data.get("value"))
+            unemp_date = unemp_data.get("date", "unknown")
+            if unemp_val is not None:
+                try:
+                    date_obj = datetime.fromisoformat(unemp_date)
+                    month_str = date_obj.strftime("%B %Y")
+                    employment_parts.append(f"the unemployment rate was {unemp_val:.1f}% in {month_str}")
+                except:
+                    employment_parts.append(f"the unemployment rate was {unemp_val:.1f}%")
+        
+        # NFP
+        if "NFP" in indicators and indicators["NFP"].get("data"):
+            nfp_data = indicators["NFP"]["data"][-1]
+            nfp_val = DataFormatter.parse_numeric(nfp_data.get("value"))
+            if nfp_val is not None:
+                employment_parts.append(f"Non-Farm Payrolls totaled {nfp_val:,.0f} thousand jobs")
+        
+        if employment_parts:
+            paragraphs.append(
+                f"Labor market conditions showed {', while '.join(employment_parts)}. "
+                f"These employment metrics offer a window into the health of the job market and broader economic activity."
+            )
+        
+        # Monetary policy and financial conditions paragraph
+        monetary_parts = []
+        
+        # Fed Funds
+        if "FEDFUNDS" in indicators and indicators["FEDFUNDS"].get("data"):
+            fedfunds_data = indicators["FEDFUNDS"]["data"]
+            if fedfunds_data:
+                latest = fedfunds_data[-1]
+                latest_val = DataFormatter.parse_numeric(latest.get("value"))
+                latest_date = latest.get("date", "unknown")
+                
+                if latest_val is not None:
+                    try:
+                        date_obj = datetime.fromisoformat(latest_date)
+                        month_str = date_obj.strftime("%B %Y")
+                        monetary_parts.append(f"the Federal Funds Rate stood at {latest_val:.2f}% as of {month_str}")
+                    except:
+                        monetary_parts.append(f"the Federal Funds Rate stood at {latest_val:.2f}%")
+                
+                # Show trend if multiple data points
+                if len(fedfunds_data) > 1:
+                    first = fedfunds_data[0]
+                    first_val = DataFormatter.parse_numeric(first.get("value"))
+                    if first_val is not None and latest_val is not None:
+                        change = latest_val - first_val
+                        if abs(change) > 0.01:
+                            trend = "declining" if change < 0 else "rising"
+                            monetary_parts.append(f"showing a {trend} trend of {abs(change):.2f} percentage points over the observed period")
+        
+        # M2 Money Supply
+        if "M2_MONEY_SUPPLY" in indicators and indicators["M2_MONEY_SUPPLY"].get("data"):
+            m2_data = indicators["M2_MONEY_SUPPLY"]["data"][-1]
+            m2_val = DataFormatter.parse_numeric(m2_data.get("value"))
+            if m2_val is not None:
+                monetary_parts.append(f"M2 money supply reached ${m2_val:,.1f} billion")
+        
+        if monetary_parts:
+            paragraphs.append(
+                f"In terms of monetary policy and money supply, {', and '.join(monetary_parts)}. "
+                f"These indicators reflect the Federal Reserve's stance and liquidity conditions in the financial system."
+            )
+        
+        # Economic activity paragraph
+        activity_parts = []
+        
+        # Retail Sales
+        if "RETAIL_SALES" in indicators and indicators["RETAIL_SALES"].get("data"):
+            retail_data = indicators["RETAIL_SALES"]["data"][-1]
+            retail_val = DataFormatter.parse_numeric(retail_data.get("value"))
+            if retail_val is not None:
+                activity_parts.append(f"retail sales totaled ${retail_val:,.0f} million")
+        
+        # Industrial Production
+        if "INDUSTRIAL_PROD" in indicators and indicators["INDUSTRIAL_PROD"].get("data"):
+            ind_data = indicators["INDUSTRIAL_PROD"]["data"][-1]
+            ind_val = DataFormatter.parse_numeric(ind_data.get("value"))
+            if ind_val is not None:
+                activity_parts.append(f"the industrial production index registered at {ind_val:.2f}")
+        
+        if activity_parts:
+            paragraphs.append(
+                f"Economic activity indicators revealed that {' while '.join(activity_parts)}. "
+                f"These measures provide insight into consumer spending strength and manufacturing output."
+            )
+        
+        # Closing paragraph
+        if len(paragraphs) > 1:
+            paragraphs.append(
+                f"Together, these economic indicators paint a comprehensive picture of the current macroeconomic environment, "
+                f"encompassing inflation dynamics, labor market health, monetary policy positioning, and real economic activity."
+            )
+        
+        return "\n\n".join(paragraphs) if paragraphs else "No processable economic data available."
 
-def format_fundamentals(data):
-    """Convert fundamentals data to natural language"""
-    if not data:
-        return None
-    
-    lines = []
-    
-    # Treasury yields
-    if "TREASURY_10Y" in data:
-        lines.append(f"The 10-Year Treasury yield stands at {data['TREASURY_10Y']:.2f}%.")
-    
-    # Credit spreads
-    if "HY_CREDIT_SPREAD" in data:
-        lines.append(f"High-yield credit spread is at {data['HY_CREDIT_SPREAD']:.2f}%.")
-    
-    # Inflation metrics
-    if "CPI" in data:
-        lines.append(f"The Consumer Price Index (CPI) is at {data['CPI']:.2f}%.")
-    if "PCE" in data:
-        lines.append(f"Personal Consumption Expenditures (PCE) is at {data['PCE']:.2f}%.")
-    if "PPI" in data:
-        lines.append(f"Producer Price Index (PPI) is at {data['PPI']:.2f}.")
-    
-    # Employment data
-    if "UNEMPLOYMENT" in data:
-        lines.append(f"Unemployment rate is {data['UNEMPLOYMENT']:.1f}%.")
-    if "NFP" in data:
-        lines.append(f"Non-Farm Payrolls (NFP) came in at {data['NFP']:,.0f}K jobs.")
-    if "JOBLESS_CLAIMS" in data:
-        lines.append(f"Initial jobless claims were {data['JOBLESS_CLAIMS']:,.0f}K.")
-    
-    # Interest rates
-    if "FEDFUNDS" in data:
-        lines.append(f"The Federal Funds Rate is currently {data['FEDFUNDS']:.2f}%.")
-    if "REAL_RATE" in data:
-        lines.append(f"Real interest rate is {data['REAL_RATE']:.2f}%.")
-    
-    # Money supply & economic activity
-    if "M2_MONEY_SUPPLY" in data:
-        lines.append(f"M2 money supply stands at ${data['M2_MONEY_SUPPLY']:,.2f}B.")
-    if "RETAIL_SALES" in data:
-        lines.append(f"Retail sales total ${data['RETAIL_SALES']:,.0f}M.")
-    if "INDUSTRIAL_PROD" in data:
-        lines.append(f"Industrial production index is at {data['INDUSTRIAL_PROD']:.2f}.")
-    if "HOUSING_STARTS" in data:
-        lines.append(f"Housing starts are at {data['HOUSING_STARTS']:,.0f}K units.")
-    
-    # Gold ETFs
-    gld_data = []
-    if "GLD_PRICE_CLOSE" in data:
-        gld_data.append(f"GLD closed at {format_number(data['GLD_PRICE_CLOSE'])}")
-    if "GLD_VOLUME" in data:
-        gld_data.append(f"volume {data['GLD_VOLUME']:,.0f} shares")
-    if gld_data:
-        lines.append(f"Gold ETF: {', '.join(gld_data)}.")
-    
-    iau_data = []
-    if "IAU_PRICE_CLOSE" in data:
-        iau_data.append(f"IAU closed at {format_number(data['IAU_PRICE_CLOSE'])}")
-    if "IAU_VOLUME" in data:
-        iau_data.append(f"volume {data['IAU_VOLUME']:,.0f} shares")
-    if iau_data:
-        lines.append(f"Gold ETF: {', '.join(iau_data)}.")
-    
-    return " ".join(lines) if lines else None
 
-def interpret_rsi(rsi):
-    """Interpret RSI value"""
-    if rsi < 30:
-        return "oversold conditions, potential buying opportunity"
-    elif rsi < 50:
-        return "bearish momentum"
-    elif rsi < 70:
-        return "neutral to bullish momentum"
-    else:
-        return "overbought conditions, potential reversal risk"
+class XAUUSDFormatter:
+    """Formats gold price data"""
+    
+    @staticmethod
+    def format(data: Dict[str, Any]) -> Optional[str]:
+        """Convert XAUUSD data to natural language"""
+        if not data:
+            return None
+        
+        open_p = DataFormatter.parse_numeric(data.get("open"))
+        high = DataFormatter.parse_numeric(data.get("high"))
+        low = DataFormatter.parse_numeric(data.get("low"))
+        close = DataFormatter.parse_numeric(data.get("close"))
+        
+        if not all([open_p, high, low, close]):
+            return None
+        
+        change, pct_change = DataFormatter.calculate_change(open_p, close)
+        if change is None or pct_change is None:
+            return None
+        
+        range_val = high - low
+        
+        # Determine direction
+        if abs(change) < 0.01:
+            direction = "no significant change"
+            change_text = "flat"
+            pct_text = "0.00%"
+        elif change > 0:
+            direction = "gain"
+            change_text = f"+{DataFormatter.format_number(change, '', 2)}"
+            pct_text = f"+{pct_change:.2f}%"
+        else:
+            direction = "loss"
+            change_text = DataFormatter.format_number(change, '', 2)
+            pct_text = f"{pct_change:.2f}%"
+        
+        text = f"Gold (XAU/USD) opened at {DataFormatter.format_number(open_p)}, "
+        text += f"reached a high of {DataFormatter.format_number(high)}, "
+        text += f"dipped to a low of {DataFormatter.format_number(low)}, "
+        text += f"and closed at {DataFormatter.format_number(close)}. "
+        text += f"This represents a daily {direction} of {change_text} ({pct_text}) "
+        text += f"with an intraday range of {DataFormatter.format_number(range_val, '', 2)}."
+        
+        return text
 
-def get_instrument_name(instrument_code):
-    """Convert instrument code to readable name"""
-    names = {
+
+class EconomicEventsFormatter:
+    """Formats economic events data"""
+    
+    @staticmethod
+    def format(events: List[Dict[str, Any]]) -> Optional[str]:
+        """Convert economic events to natural language"""
+        if not events:
+            return None
+        
+        lines = []
+        for event in events:
+            try:
+                time = event.get("time", "Unknown time")
+                currency = event.get("currency", "")
+                event_name = event.get("event", "Unknown event")
+                actual = event.get("actual", "")
+                forecast = event.get("forecast", "")
+                previous = event.get("previous", "")
+                
+                # Build event description
+                text = f"At {time}, {currency} {event_name} was released."
+                
+                if actual:
+                    text += f" Actual: {actual}"
+                    
+                    # Compare to forecast
+                    if forecast and actual != forecast:
+                        actual_num = DataFormatter.parse_numeric(actual)
+                        forecast_num = DataFormatter.parse_numeric(forecast)
+                        
+                        if actual_num is not None and forecast_num is not None:
+                            if actual_num > forecast_num:
+                                text += f", beating forecast of {forecast}"
+                            elif actual_num < forecast_num:
+                                text += f", missing forecast of {forecast}"
+                        else:
+                            text += f" (forecast: {forecast})"
+                    elif forecast:
+                        text += f", matching forecast of {forecast}"
+                    
+                    # Compare to previous
+                    if previous and actual != previous:
+                        actual_num = DataFormatter.parse_numeric(actual)
+                        previous_num = DataFormatter.parse_numeric(previous)
+                        
+                        if actual_num is not None and previous_num is not None:
+                            change = actual_num - previous_num
+                            if abs(change) > 0.01:
+                                direction = "rising" if change > 0 else "falling"
+                                text += f" and {direction} from previous {previous}."
+                            else:
+                                text += f", unchanged from previous {previous}."
+                        else:
+                            text += f" (previous: {previous})."
+                    elif not forecast:
+                        text += "."
+                
+                lines.append(text)
+            except Exception:
+                # Skip malformed events but continue processing
+                continue
+        
+        return "\n".join(lines) if lines else None
+
+
+class FundamentalsFormatter:
+    """Formats fundamental data"""
+    
+    @staticmethod
+    def format(data: Dict[str, Any]) -> Optional[str]:
+        """Convert fundamentals data to natural language"""
+        if not data:
+            return None
+        
+        lines = []
+        
+        # Treasury yields
+        if "TREASURY_10Y" in data:
+            val = DataFormatter.parse_numeric(data["TREASURY_10Y"])
+            if val is not None:
+                lines.append(f"10-Year Treasury yield: {val:.2f}%.")
+        
+        # Credit spreads
+        if "HY_CREDIT_SPREAD" in data:
+            val = DataFormatter.parse_numeric(data["HY_CREDIT_SPREAD"])
+            if val is not None:
+                lines.append(f"High-yield credit spread: {val:.2f}%.")
+        
+        # Inflation metrics
+        if "CPI" in data:
+            val = DataFormatter.parse_numeric(data["CPI"])
+            if val is not None:
+                lines.append(f"Consumer Price Index (CPI): {val:.2f}.")
+        
+        if "PCE" in data:
+            val = DataFormatter.parse_numeric(data["PCE"])
+            if val is not None:
+                lines.append(f"Personal Consumption Expenditures (PCE): {val:.2f}.")
+        
+        if "PPI" in data:
+            val = DataFormatter.parse_numeric(data["PPI"])
+            if val is not None:
+                lines.append(f"Producer Price Index (PPI): {val:.2f}.")
+        
+        # Employment data
+        if "UNEMPLOYMENT" in data:
+            val = DataFormatter.parse_numeric(data["UNEMPLOYMENT"])
+            if val is not None:
+                lines.append(f"Unemployment rate: {val:.1f}%.")
+        
+        if "NFP" in data:
+            val = DataFormatter.parse_numeric(data["NFP"])
+            if val is not None:
+                lines.append(f"Non-Farm Payrolls: {val:,.0f}K jobs.")
+        
+        if "JOBLESS_CLAIMS" in data:
+            val = DataFormatter.parse_numeric(data["JOBLESS_CLAIMS"])
+            if val is not None:
+                lines.append(f"Initial jobless claims: {val:,.0f}K.")
+        
+        # Interest rates
+        if "FEDFUNDS" in data:
+            val = DataFormatter.parse_numeric(data["FEDFUNDS"])
+            if val is not None:
+                lines.append(f"Federal Funds Rate: {val:.2f}%.")
+        
+        if "REAL_RATE" in data:
+            val = DataFormatter.parse_numeric(data["REAL_RATE"])
+            if val is not None:
+                lines.append(f"Real interest rate: {val:.2f}%.")
+        
+        # Money supply & economic activity
+        if "M2_MONEY_SUPPLY" in data:
+            val = DataFormatter.parse_numeric(data["M2_MONEY_SUPPLY"])
+            if val is not None:
+                lines.append(f"M2 money supply: ${val:,.2f}B.")
+        
+        if "RETAIL_SALES" in data:
+            val = DataFormatter.parse_numeric(data["RETAIL_SALES"])
+            if val is not None:
+                lines.append(f"Retail sales: ${val:,.0f}M.")
+        
+        if "INDUSTRIAL_PROD" in data:
+            val = DataFormatter.parse_numeric(data["INDUSTRIAL_PROD"])
+            if val is not None:
+                lines.append(f"Industrial production index: {val:.2f}.")
+        
+        if "HOUSING_STARTS" in data:
+            val = DataFormatter.parse_numeric(data["HOUSING_STARTS"])
+            if val is not None:
+                lines.append(f"Housing starts: {val:,.0f}K units.")
+        
+        # Gold ETFs
+        gld_parts = []
+        if "GLD_CLOSE" in data:
+            val = DataFormatter.parse_numeric(data["GLD_CLOSE"])
+            if val is not None:
+                gld_parts.append(f"closed at {DataFormatter.format_number(val)}")
+        
+        if "GLD_VOLUME" in data:
+            val = DataFormatter.parse_numeric(data["GLD_VOLUME"])
+            if val is not None:
+                gld_parts.append(f"volume {val:,.0f}")
+        
+        if gld_parts:
+            lines.append(f"GLD ETF: {', '.join(gld_parts)}.")
+        
+        iau_parts = []
+        if "IAU_CLOSE" in data:
+            val = DataFormatter.parse_numeric(data["IAU_CLOSE"])
+            if val is not None:
+                iau_parts.append(f"closed at {DataFormatter.format_number(val)}")
+        
+        if "IAU_VOLUME" in data:
+            val = DataFormatter.parse_numeric(data["IAU_VOLUME"])
+            if val is not None:
+                iau_parts.append(f"volume {val:,.0f}")
+        
+        if iau_parts:
+            lines.append(f"IAU ETF: {', '.join(iau_parts)}.")
+        
+        return " ".join(lines) if lines else None
+
+
+class MarketAnalysisFormatter:
+    """Formats market analysis data"""
+    
+    INSTRUMENT_NAMES = {
         "XAUUSD": "Gold (XAU/USD)",
         "USA500.IDX": "S&P 500",
+        "USA100.IDX": "Nasdaq 100",
+        "USA30.IDX": "Dow Jones",
         "VOL.IDX": "VIX (Volatility Index)",
-        "DOLLAR.IDX": "US Dollar Index (DXY)"
+        "DOLLAR.IDX": "US Dollar Index (DXY)",
+        "BTC": "Bitcoin",
+        "ETH": "Ethereum"
     }
-    return names.get(instrument_code, instrument_code)
+    
+    @staticmethod
+    def format(data: Dict[str, Any]) -> Optional[str]:
+        """Convert market analysis to natural language"""
+        if not data:
+            return None
+        
+        # Extract unique instruments
+        instruments = set()
+        for key in data.keys():
+            if "_PRICE" in key:
+                instrument = key.replace("_PRICE", "")
+                instruments.add(instrument)
+        
+        if not instruments:
+            return None
+        
+        lines = []
+        
+        for instrument in sorted(instruments):
+            try:
+                price = DataFormatter.parse_numeric(data.get(f"{instrument}_PRICE"))
+                bias = data.get(f"{instrument}_BIAS", "neutral")
+                rsi = DataFormatter.parse_numeric(data.get(f"{instrument}_RSI"))
+                macd = DataFormatter.parse_numeric(data.get(f"{instrument}_MACD"))
+                
+                if price is None:
+                    continue
+                
+                # Format price
+                if instrument == "XAUUSD":
+                    price_str = DataFormatter.format_number(price)
+                else:
+                    price_str = f"{price:,.2f}"
+                
+                instrument_name = MarketAnalysisFormatter.INSTRUMENT_NAMES.get(instrument, instrument)
+                text = f"{instrument_name}: trading at {price_str} with {bias.lower()} bias."
+                
+                if rsi is not None:
+                    text += f" RSI: {rsi:.2f} ({DataFormatter.interpret_rsi(rsi)})."
+                
+                if macd is not None:
+                    text += f" MACD: {macd:.2f} ({DataFormatter.interpret_macd(macd)})."
+                
+                lines.append(text)
+            except Exception:
+                continue
+        
+        return "\n".join(lines) if lines else None
 
-def format_market_analysis(data):
-    """Convert market analysis to natural language"""
-    if not data:
-        return None
-    
-    # Extract unique instruments from the data keys
-    instruments = set()
-    for key in data.keys():
-        if "_PRICE" in key:
-            instrument = key.replace("_PRICE", "")
-            instruments.add(instrument)
-    
-    if not instruments:
-        return None
-    
-    lines = []
-    
-    for instrument in sorted(instruments):
-        price = data.get(f"{instrument}_PRICE")
-        bias = data.get(f"{instrument}_BIAS", "neutral")
-        rsi = data.get(f"{instrument}_RSI")
-        macd = data.get(f"{instrument}_MACD")
-        
-        if price is None:
-            continue
-        
-        # Format price based on instrument
-        if instrument == "XAUUSD":
-            price_str = format_number(price)
-        else:
-            price_str = f"{price:,.2f}"
-        
-        instrument_name = get_instrument_name(instrument)
-        text = f"{instrument_name} is trading at {price_str} with a {bias.lower()} bias."
-        
-        if rsi is not None:
-            text += f" RSI: {rsi:.2f} ({interpret_rsi(rsi)})."
-        
-        if macd is not None:
-            momentum = "positive" if macd > 0 else "negative"
-            text += f" MACD: {macd:.2f} ({momentum} momentum)."
-        
-        lines.append(text)
-    
-    return "\n".join(lines) if lines else None
 
-def format_news(articles):
-    """Convert news articles to natural language"""
-    if not articles:
+class NewsFormatter:
+    """Formats news articles"""
+    
+    @staticmethod
+    def format(articles: List[Dict[str, Any]]) -> Optional[str]:
+        """Convert news articles to natural language"""
+        if not articles:
+            return None
+        
+        # Group by category
+        by_category = {}
+        for article in articles:
+            category = article.get("category", "general")
+            if category not in by_category:
+                by_category[category] = []
+            by_category[category].append(article)
+        
+        lines = []
+        total_count = 0
+        
+        for category in sorted(by_category.keys()):
+            items = by_category[category]
+            lines.append(f"\n{category.upper()} ({len(items)} items):")
+            
+            for item in items:
+                title = item.get("title", "").strip()
+                ticker = item.get("ticker", "").strip()
+                
+                if title:
+                    ticker_text = f" [{ticker}]" if ticker else ""
+                    lines.append(f"  • {title}{ticker_text}")
+                    total_count += 1
+        
+        if lines:
+            lines.append(f"\n[Total: {total_count} news items]")
+            return "\n".join(lines)
+        
         return None
-    
-    # Group by category
-    by_category = {}
-    for article in articles:
-        category = article.get("category", "general")
-        if category not in by_category:
-            by_category[category] = []
-        by_category[category].append(article)
-    
-    lines = []
-    for category, items in by_category.items():
-        for item in items:
-            title = item.get("title", "")
-            ticker = item.get("ticker", "")
-            ticker_text = f" ({ticker})" if ticker else ""
-            lines.append(f"[{category.upper()}] {title}{ticker_text}")
-    
-    summary = "\n".join(lines)
-    summary += f"\n[Total: {len(articles)} news items]"
-    
-    return summary
 
-def format_reddit(posts):
-    """Convert reddit posts to natural language"""
-    if not posts:
+
+class RedditFormatter:
+    """Formats Reddit posts"""
+    
+    @staticmethod
+    def format(posts: List[Dict[str, Any]]) -> Optional[str]:
+        """Convert reddit posts to natural language"""
+        if not posts:
+            return None
+        
+        # Group by subreddit
+        by_subreddit = {}
+        for post in posts:
+            source = post.get("source", "unknown")
+            if source not in by_subreddit:
+                by_subreddit[source] = []
+            by_subreddit[source].append(post)
+        
+        lines = []
+        total_count = 0
+        
+        for subreddit in sorted(by_subreddit.keys()):
+            items = by_subreddit[subreddit]
+            lines.append(f"\n{subreddit} ({len(items)} posts):")
+            
+            for post in items:
+                title = post.get("title", "").strip()
+                if title:
+                    lines.append(f"  • {title}")
+                    total_count += 1
+        
+        if lines:
+            lines.append(f"\n[Total: {total_count} posts tracked]")
+            return "\n".join(lines)
+        
         return None
-    
-    lines = []
-    for post in posts:
-        title = post.get("title", "")
-        source = post.get("source", "")
-        lines.append(f"{source}: \"{title}\"")
-    
-    summary = "\n".join(lines)
-    summary += f"\n[Total: {len(posts)} posts tracked]"
-    
-    return summary
 
-def convert_snapshot_to_text(snapshot_data):
-    """Convert entire snapshot to natural language summary"""
-    date = snapshot_data.get("date", "Unknown Date")
-    data = snapshot_data.get("data", {})
+
+class SnapshotConverter:
+    """Main converter class"""
     
-    # Parse date for better formatting
-    try:
-        date_obj = datetime.fromisoformat(date)
-        formatted_date = date_obj.strftime("%B %d, %Y")
-    except:
-        formatted_date = date
-    
-    sections = []
-    sections.append(f"{'='*70}")
-    sections.append(f"MARKET SUMMARY FOR {formatted_date.upper()}")
-    sections.append(f"{'='*70}\n")
-    
-    # Process each category only if it has data
-    if "xauusd" in data and data["xauusd"]:
-        xauusd_text = format_xauusd(data["xauusd"])
-        if xauusd_text:
-            sections.append("GOLD PRICE ACTION:")
-            sections.append(xauusd_text)
-            sections.append("")
-    
-    if "economic_events" in data and data["economic_events"]:
-        events_text = format_economic_events(data["economic_events"])
-        if events_text:
-            sections.append("ECONOMIC EVENTS:")
-            sections.append(events_text)
-            sections.append("")
-    
-    if "fundamentals" in data and data["fundamentals"]:
-        fundamentals_text = format_fundamentals(data["fundamentals"])
-        if fundamentals_text:
-            sections.append("FUNDAMENTALS:")
-            sections.append(fundamentals_text)
-            sections.append("")
-    
-    if "market_analysis" in data and data["market_analysis"]:
-        analysis_text = format_market_analysis(data["market_analysis"])
-        if analysis_text:
-            sections.append("TECHNICAL ANALYSIS:")
-            sections.append(analysis_text)
-            sections.append("")
-    
-    if "news" in data and data["news"]:
-        news_text = format_news(data["news"])
-        if news_text:
-            sections.append("NEWS HIGHLIGHTS:")
-            sections.append(news_text)
-            sections.append("")
-    
-    if "reddit" in data and data["reddit"]:
-        reddit_text = format_reddit(data["reddit"])
-        if reddit_text:
-            sections.append("SOCIAL SENTIMENT:")
-            sections.append(reddit_text)
-            sections.append("")
-    
-    return "\n".join(sections)
+    @staticmethod
+    def convert_to_text(snapshot_data: Dict[str, Any], is_inflation_file: bool = False) -> str:
+        """Convert entire snapshot to natural language summary"""
+        
+        if is_inflation_file:
+            # Special handling for inflation_data.json
+            title = "MONTHLY ECONOMIC INDICATORS OVERVIEW"
+            date_str = ""
+            
+            sections = []
+            sections.append(f"{'='*70}")
+            sections.append(f"{title}")
+            sections.append(f"{'='*70}\n")
+            
+            formatted = InflationDataFormatter.format(snapshot_data)
+            if formatted:
+                sections.append(formatted)
+            else:
+                sections.append("No economic data available.")
+            
+            sections.append("\n" + "="*70)
+            sections.append(f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+            sections.append("="*70)
+            
+            return "\n".join(sections)
+        
+        # Standard daily snapshot handling
+        date = snapshot_data.get("date", "Unknown Date")
+        data = snapshot_data.get("data", {})
+        
+        # Parse date
+        try:
+            date_obj = datetime.fromisoformat(date)
+            formatted_date = date_obj.strftime("%B %d, %Y (%A)")
+        except:
+            formatted_date = date
+        
+        sections = []
+        sections.append(f"{'='*70}")
+        sections.append(f"MARKET SUMMARY FOR {formatted_date.upper()}")
+        sections.append(f"{'='*70}\n")
+        
+        # Process each category
+        formatters = [
+            ("xauusd", "GOLD PRICE ACTION", XAUUSDFormatter.format),
+            ("economic_events", "ECONOMIC EVENTS", EconomicEventsFormatter.format),
+            ("fundamentals", "FUNDAMENTALS", FundamentalsFormatter.format),
+            ("market_analysis", "TECHNICAL ANALYSIS", MarketAnalysisFormatter.format),
+            ("news", "NEWS HIGHLIGHTS", NewsFormatter.format),
+            ("reddit", "SOCIAL SENTIMENT", RedditFormatter.format),
+        ]
+        
+        for key, title, formatter in formatters:
+            if key in data and data[key]:
+                try:
+                    formatted = formatter(data[key])
+                    if formatted:
+                        sections.append(f"{title}:")
+                        sections.append(formatted)
+                        sections.append("")
+                except Exception as e:
+                    sections.append(f"{title}: [Error processing data: {str(e)}]")
+                    sections.append("")
+        
+        # Footer
+        sections.append("="*70)
+        sections.append(f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        sections.append("="*70)
+        
+        return "\n".join(sections)
+
 
 def main():
     print("\n" + "="*70)
-    print("DAILY SNAPSHOT TO NATURAL LANGUAGE CONVERTER")
+    print("ENHANCED DAILY SNAPSHOT TO NATURAL LANGUAGE CONVERTER")
     print("="*70 + "\n")
     
     input_path = Path(INPUT_FOLDER)
@@ -359,17 +715,26 @@ def main():
     output_path = Path(OUTPUT_FOLDER)
     output_path.mkdir(exist_ok=True)
     
-    # Get all snapshot files
-    snapshot_files = sorted(input_path.glob("snapshot_*.json"))
+    # Check for inflation data first
+    inflation_file = input_path / "inflation_data.json"
+    snapshot_files = []
+    
+    if inflation_file.exists():
+        snapshot_files.append(inflation_file)
+        print("Found inflation_data.json - processing as monthly overview\n")
+    
+    # Get all daily snapshot files
+    daily_files = sorted(input_path.glob("snapshot_*.json"))
+    snapshot_files.extend(daily_files)
     
     if not snapshot_files:
         print(f"ERROR: No snapshot files found in {INPUT_FOLDER}")
         return
     
-    print(f"Found {len(snapshot_files)} snapshot files\n")
-    print("Converting to natural language...\n")
+    print(f"Found {len(snapshot_files)} files to process\n")
     
     converted_count = 0
+    error_count = 0
     
     for snapshot_file in snapshot_files:
         try:
@@ -377,12 +742,18 @@ def main():
             with open(snapshot_file, 'r', encoding='utf-8') as f:
                 snapshot_data = json.load(f)
             
-            # Convert to text
-            text_summary = convert_snapshot_to_text(snapshot_data)
+            # Check if this is the inflation data file
+            is_inflation = snapshot_file.name == "inflation_data.json"
             
-            # Save as text file
-            date = snapshot_data.get("date", "unknown")
-            output_file = output_path / f"summary_{date}.txt"
+            # Convert to text
+            text_summary = SnapshotConverter.convert_to_text(snapshot_data, is_inflation_file=is_inflation)
+            
+            # Determine output filename
+            if is_inflation:
+                output_file = output_path / "summary_monthly_indicators.txt"
+            else:
+                date = snapshot_data.get("date", "unknown")
+                output_file = output_path / f"summary_{date}.txt"
             
             with open(output_file, 'w', encoding='utf-8') as f:
                 f.write(text_summary)
@@ -391,13 +762,16 @@ def main():
             print(f"✓ {output_file.name}")
             
         except Exception as e:
-            print(f"✗ Error processing {snapshot_file.name}: {e}")
+            error_count += 1
+            print(f"✗ Error processing {snapshot_file.name}: {str(e)}")
     
     print("\n" + "="*70)
-    print(f"Successfully converted {converted_count} snapshots")
+    print(f"Successfully converted: {converted_count}")
+    print(f"Errors encountered: {error_count}")
     print(f"Output folder: {OUTPUT_FOLDER}/")
     print("="*70)
     print("FINISHED\n")
+
 
 if __name__ == "__main__":
     main()
