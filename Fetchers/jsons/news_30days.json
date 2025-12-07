@@ -1,0 +1,1100 @@
+{
+  "fetch_time": "2025-12-07T20:51:13.610291",
+  "source": "FinViz",
+  "period": "Last 30 days",
+  "total_articles": 181,
+  "by_category": {
+    "market": 153,
+    "gold": 24,
+    "volatility": 2,
+    "dollar": 2
+  },
+  "headlines": [
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Zacks Investment Ideas feature highlights Tesla, Intercontinental Exchange, American, United, Delta and QQQ",
+      "time": "2025-11-10T01:55:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Stock Market Today: Dow Rises On Shutdown Deal Hopes; Nvidia, Palantir, Tesla Rally (Live Coverage)",
+      "time": "2025-11-10T09:45:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "ETFs to Consider as Gold Jumps to 2-Week High",
+      "time": "2025-11-10T11:06:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "5 Defensive Consumer Plays to Watch If Markets Keep Slipping",
+      "time": "2025-11-10T11:22:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "3 Stocks Showing Relative Strength as Markets Pull Back",
+      "time": "2025-11-10T11:41:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold Prices Rise Again. Why $5,000 Could Be the Next Stop.",
+      "time": "2025-11-10T14:57:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Warren Buffett Sold His Top Recommended Investment. Here's What It Might Mean for You.",
+      "time": "2025-11-11T06:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Wavers After Shutdown Bill Passes; Nvidia Partner Plunges (Live Coverage)",
+      "time": "2025-11-11T08:50:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Rises After Shutdown Bill Passes; Nvidia Partner Plunges (Live Coverage)",
+      "time": "2025-11-11T09:45:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Is the S&P 500 Poised for a New High? ETFs to Consider",
+      "time": "2025-11-11T10:13:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "SPYs 50-Day Moving Average Streak is Going Strong. The Rest of the Market is Sending Up Flares.",
+      "time": "2025-11-11T12:16:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Why Income Investors Are Ditching Tech for Energy and Industrials",
+      "time": "2025-11-11T14:11:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "This Market Is Trickier Than You Think. How to Hedge.",
+      "time": "2025-11-12T01:30:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "3 Simple ETFs to Buy With $1,000 and Hold for a Lifetime",
+      "time": "2025-11-12T05:05:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Want $1 Million in Retirement? 3 Simple Index Funds to Buy and Hold for Decades",
+      "time": "2025-11-12T05:35:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Should SPDR S&P 500 ETF (SPY) Be on Your Investing Radar?",
+      "time": "2025-11-12T06:20:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Im Preparing for a Bang When the Nasdaq Crashes. Heres How Im Trading the QQQ ETF First.",
+      "time": "2025-11-12T07:30:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Market Minute 11-12-25- Stocks on a Streak; AI Helping Chip Sales",
+      "time": "2025-11-12T09:15:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Jones Index Rises As Nvidia, AMD Rally (Live Coverage)",
+      "time": "2025-11-12T09:44:00"
+    },
+    {
+      "category": "market",
+      "ticker": "IWM",
+      "title": "Daily ETF Flow: $207M Goes Into IWM",
+      "time": "2025-11-12T18:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "SPY- Why You Should Ignore Misguided \"Bubble\" Talk",
+      "time": "2025-11-13T00:01:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Cisco Surges on Earnings Beat & Upbeat Guidance: ETFs in Focus",
+      "time": "2025-11-13T06:41:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Dow Jones Tops $48,000-Mark: ETFs to Rally Further?",
+      "time": "2025-11-13T08:20:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Hassett Says October Data May Never Be Known",
+      "time": "2025-11-13T08:32:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Betting on a Weaker Dollar? ETFs to Consider",
+      "time": "2025-11-13T10:58:00"
+    },
+    {
+      "category": "market",
+      "ticker": "IWM",
+      "title": "Can Equities Stabilize after the Government Reopens?",
+      "time": "2025-11-13T12:47:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "A stock market that could only go up now seems to need direction",
+      "time": "2025-11-13T12:54:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Kevin O'Leary's Take on Gold: 'It's Not a Debate, It's Not a Johnny-Come-Lately, It's Not a Crypto, It's Not Something Where There's Still Skeptics'",
+      "time": "2025-11-13T13:01:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Interactive service for choosing a jurisdiction for crypto businesses and startups from Gofaizen Sherle",
+      "time": "2025-11-13T13:04:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Canary Capital Launches Spot XRP ETF (XRPC), Delivering Simplified Access to a Foundational Blockchain Asset",
+      "time": "2025-11-13T14:39:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Daily ETF Flows: QQQ Takes Top Spot",
+      "time": "2025-11-13T18:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Want $1 Million in Retirement? 3 Simple Index Funds to Buy and Hold for Decades.",
+      "time": "2025-11-14T04:31:00"
+    },
+    {
+      "category": "market",
+      "ticker": "IWM",
+      "title": "Zacks Investment Ideas feature highlights: IWM, CoreWeave, Astera Labs, Nebius, Expand Energy, Eli Lilly and Nvidia",
+      "time": "2025-11-14T07:37:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Buffett's Investing Lessons: What They Mean for ETF Investors",
+      "time": "2025-11-14T08:00:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold Stocks Dominate The IBD 50. Here's Why.",
+      "time": "2025-11-14T08:01:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Here are November's worst-performing S&P 500 stocks so far - including some surprises",
+      "time": "2025-11-14T08:20:00"
+    },
+    {
+      "category": "volatility",
+      "ticker": "VXX",
+      "title": "Market Turbulence Ahead? Volatility ETFs to Consider",
+      "time": "2025-11-14T08:45:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "QQQ vs. SPY vs. DIA: Which ETF Is the Ultimate Winner?",
+      "time": "2025-11-14T08:57:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "3 Monthly Dividend Stocks With Big Upside Potential",
+      "time": "2025-11-14T09:05:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Slides Another 500 Points; Nvidia, Palantir, Tesla Extend Losses (Live Coverage)",
+      "time": "2025-11-14T09:43:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Jones Index Slides Another 500 Points; Nvidia, Palantir, Tesla Extend Losses (Live Coverage)",
+      "time": "2025-11-14T09:43:00"
+    },
+    {
+      "category": "market",
+      "ticker": "IWM",
+      "title": "Dont Buy the Stock Market Dip. These Charts of Small-Cap and Semiconductor Stocks Explain Why.",
+      "time": "2025-11-14T11:04:00"
+    },
+    {
+      "category": "market",
+      "ticker": "IWM",
+      "title": "Don't Buy the Stock Market Dip. These Charts of Small Caps, Semiconductors Explain Why.",
+      "time": "2025-11-14T11:04:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Bears Missed Their Shot: Why the Market Could Grind Higher Into Year-End",
+      "time": "2025-11-14T11:39:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Coinbase Ventures-Backed Supra Offers $1M Bounty to Beat Its Parallel EVM Execution Engine",
+      "time": "2025-11-14T15:13:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Joel Greenblatt's Strategic Moves: A Closer Look at SPDR S&P 500 ETF Trust",
+      "time": "2025-11-14T17:03:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Are These 3 Oversold Tech Giants Ready to Rebound?",
+      "time": "2025-11-14T18:34:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "These 13 tech stocks have grown profits rapidly - and their stocks are still on sale",
+      "time": "2025-11-15T07:30:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Wobbles As Nvidia Slides; Google Jumps On Warren Buffett Stake (Live Coverage)",
+      "time": "2025-11-17T08:01:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Deribit and SignalPlus Launch 2025 Trading Competition, Featuring a $450,000 USDC Prize Pool",
+      "time": "2025-11-17T08:04:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Falls As Nvidia Slides; Alphabet Jumps On Warren Buffett Stake (Live Coverage)",
+      "time": "2025-11-17T09:56:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Lite Strategy Reports First Quarter Fiscal Year 2026 Results; Highlights Successful Launch of $100M Litecoin Treasury Strategy and Movement into Active Capital Market Operations",
+      "time": "2025-11-17T17:19:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "What's Behind Silver's Explosive Gains?",
+      "time": "2025-11-17T17:49:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "What's Behind Silver's Explosive Gains?",
+      "time": "2025-11-17T17:49:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Should Invesco QQQ (QQQ) Be on Your Investing Radar?",
+      "time": "2025-11-18T06:20:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Tech Slumps Before NVIDIA Earnings: Any ETF Winners in Tech Space?",
+      "time": "2025-11-18T07:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Build Buffett's Berkshire-Like Portfolio With These ETFs",
+      "time": "2025-11-18T08:00:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Market Minute 11-18-25- When Will the \"Everything\" Selloff End",
+      "time": "2025-11-18T09:15:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Market Minute 11-18-25- When Will the \"Everything\" Selloff End",
+      "time": "2025-11-18T09:15:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Stock Market Today: Dow Jones Index Dives 400 Points; Nvidia, Palantir Extending Their Losses (Live Coverage)",
+      "time": "2025-11-18T09:41:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "2 ETFs That Are Good Bets to Beat the S&P 500 in 2026",
+      "time": "2025-11-18T09:45:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "3 Smart Defensive Stocks for an Uneasy Market",
+      "time": "2025-11-18T10:07:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Jones Index Sinks 600 Points As Nvidia, Home Depot See More Losses (Live Coverage)",
+      "time": "2025-11-18T10:43:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Hedge Funds Are Loading Up on These 3 ETFs",
+      "time": "2025-11-18T12:05:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold to Hit $4,900 in 2026, Goldman Says. The Rally Has Legs.",
+      "time": "2025-11-18T13:32:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Will the Fed Cut, or Wont It? This ETF Move Works Either Way.",
+      "time": "2025-11-19T01:15:00"
+    },
+    {
+      "category": "market",
+      "ticker": "IWM",
+      "title": "Will the Fed Cut, or Won't It? This ETF Move Works Either Way.",
+      "time": "2025-11-19T01:15:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold Under Pressure as Rate-Cut Hopes Fade: Time to Buy the Dip?",
+      "time": "2025-11-19T06:55:00"
+    },
+    {
+      "category": "dollar",
+      "ticker": "UUP",
+      "title": "Gold Under Pressure as Rate-Cut Hopes Fade: Time to Buy the Dip?",
+      "time": "2025-11-19T06:55:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "If You'd Invested $1,000 in the Invesco QQQ Trust ETF 5 Years Ago, Here's How Much You'd Have Today",
+      "time": "2025-11-19T07:10:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold Comfortably Outperforms Market YTD: ETFs to Consider",
+      "time": "2025-11-19T08:05:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "U.S. Outperformance in Sight? ETFs to Play Morgan Stanley's Forecast",
+      "time": "2025-11-19T08:20:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Rises Ahead Of Fed Minutes; Nvidia Rallies With Earnings On The Way (Live Coverage)",
+      "time": "2025-11-19T08:52:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Wobbles Ahead Of Fed Minutes; Nvidia Rallies With Earnings On The Way (Live Coverage)",
+      "time": "2025-11-19T09:41:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Tapbit Marks 4th Anniversary with Continued Focus on Innovation and User Trust",
+      "time": "2025-11-19T11:51:00"
+    },
+    {
+      "category": "market",
+      "ticker": "IWM",
+      "title": "Small-Cap Stocks Are Sounding a Very Scary Alarm. Heres How to Protect Yourself and Even Profit.",
+      "time": "2025-11-19T15:38:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "The Clear Winner for Building Long Term Wealth, QQQ or VTI?",
+      "time": "2025-11-19T16:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stocks Shoot Higher in After-Hours Trading on Nvidia Earnings",
+      "time": "2025-11-19T16:58:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Nvidia Earnings Send Stocks Higher",
+      "time": "2025-11-19T16:58:00"
+    },
+    {
+      "category": "market",
+      "ticker": "IWM",
+      "title": "Should iShares Russell 2000 ETF (IWM) Be on Your Investing Radar?",
+      "time": "2025-11-20T06:20:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "AI and HPC Bitcoin Miners Surge Pre Market Following Stellar NVIDIA Earnings",
+      "time": "2025-11-20T07:13:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "The Zacks Analyst Blog Highlights MS, VOO, SPY, IVV, SPYM, RSP, EQ and EQWL",
+      "time": "2025-11-20T07:30:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Could This Be One of the Smartest ETFs to Buy Right Now?",
+      "time": "2025-11-20T08:30:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Where to Put Your Gold Money Now That The Market Is Getting Nervous",
+      "time": "2025-11-20T08:35:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Rallies 600 Points As Nvidia Surges On Earnings; Jobs Report Surprises (Live Coverage)",
+      "time": "2025-11-20T09:44:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Up Nearly 700 Points As Nvidia Earnings Impress; Broadcom Hits Entry (Live Coverage)",
+      "time": "2025-11-20T10:44:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Stock Market Today: Dow Turns Lower As Nvidia Loses Post-Earnings Surge; Oklo Dives (Live Coverage)",
+      "time": "2025-11-20T12:29:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Hacken Audit Validates QANplatforms Quantum Security Protocol",
+      "time": "2025-11-20T14:05:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Even Nvidia can't help a stock market that's in real trouble",
+      "time": "2025-11-20T17:04:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Goldman Sachs Just Delivered Bad News for U.S. Investors ... Sort Of. Here's What You Need to Know.",
+      "time": "2025-11-21T04:25:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold Is Crushing the S&P 500, the Nasdaq, and Even Nvidia This Year. Here's a Simple Way to Own It.",
+      "time": "2025-11-21T04:57:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "ETFs to Play Amid Rising AI Bubble Concerns",
+      "time": "2025-11-21T08:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Inside the Recent Strength in Biotech ETFs",
+      "time": "2025-11-21T08:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Bounces On Rate-Cut Hopes After Sell-Off; Nvidia, Palantir Switch Gears (Live Coverage)",
+      "time": "2025-11-21T08:57:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Market Anxiety Picked Up Thursday",
+      "time": "2025-11-21T09:05:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Up On Rate-Cut Hopes After Sell-Off; Nvidia, Palantir, Tesla Rebound (Live Coverage)",
+      "time": "2025-11-21T09:44:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Pre-markets Try Again, Begin Session in the Green",
+      "time": "2025-11-21T10:19:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Stock Market Today: Dow Rallies Cautiously On Rate-Cut Hopes; Nvidia, Palantir, AMD Extend Losses (Live Coverage)",
+      "time": "2025-11-21T10:19:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "U.S. Gaming Sales Rise 3% As Switch 2 Surges",
+      "time": "2025-11-21T11:22:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Trump Lifts 40% Tariffs On Brazilian Food Imports",
+      "time": "2025-11-21T11:22:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "What Will Happen To Microstrategy If Bitcoin Falls Under $74,000?",
+      "time": "2025-11-21T19:30:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "IAU",
+      "title": "China Is Driving This Years Gold ETF Boom",
+      "time": "2025-11-21T21:21:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "3 Top ETFs I Can't Wait to Buy More of in My Retirement Account This November",
+      "time": "2025-11-22T10:21:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "3 ETFs Every Income Investor Should Know Before 2026",
+      "time": "2025-11-22T12:28:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "If You'd Invested $1,000 in the SPDR S&P 500 ETF Trust (SPY) 10 Years Ago, Here's How Much You'd Have Today",
+      "time": "2025-11-23T08:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Here's How Big a $50-Per-Week Investment in the S&P 500 Could Grow Over the Long Haul",
+      "time": "2025-11-23T18:45:00"
+    },
+    {
+      "category": "market",
+      "ticker": "DIA",
+      "title": "Here's the Average Stock Market Return in the Last 10 Years, and What Wall Street Expects in the Future",
+      "time": "2025-11-24T03:50:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "The Zacks Analyst Blog SPDR Gold Trust, HDGE, PGHY and XLV",
+      "time": "2025-11-24T05:06:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Global markets outperform US in 2025: How to trade foreign stocks",
+      "time": "2025-11-24T06:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "A Contrarian Case to 'Buy the Dip' Right Now",
+      "time": "2025-11-24T08:50:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Best-Performing ETFs of Last Week: Healthcare Rules",
+      "time": "2025-11-24T10:00:00"
+    },
+    {
+      "category": "volatility",
+      "ticker": "VXX",
+      "title": "Best-Performing ETFs of Last Week: Healthcare Rules",
+      "time": "2025-11-24T10:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "The QQQ ETF Points to Whats Next for Stocks And You Probably Wont Like the Answer",
+      "time": "2025-11-24T13:54:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Better Buy for 2026: An S&P 500 Index Fund, Gold, or Bitcoin?",
+      "time": "2025-11-25T04:50:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Is Dow Jones ETF Better-Placed Than S&P 500 & Nasdaq?",
+      "time": "2025-11-25T06:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "TrustLinq Launches Swiss-Regulated Crypto-to-Fiat Payment Platform to boost Cryptocurrency Adoption",
+      "time": "2025-11-25T09:05:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Trump Trade: White House pauses EO preempting state laws on AI",
+      "time": "2025-11-25T10:05:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Will the S&P 500 Rally in December? These 3 Signals Point to a Big Move Ahead",
+      "time": "2025-11-25T16:09:00"
+    },
+    {
+      "category": "market",
+      "ticker": "IWM",
+      "title": "Don't Just Trade Something, Sit There",
+      "time": "2025-11-26T01:30:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "History Says These are 3 Stocks to Buy for December",
+      "time": "2025-11-26T07:13:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Nasdaq 100: Who's In And Who's Out Of QQQ. Walmart, Strategy, Lululemon?",
+      "time": "2025-11-26T08:08:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "5 Stocks to Buy Before Santa Claus Comes to Town",
+      "time": "2025-11-26T09:35:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Be Thankful to These ETFs This Year",
+      "time": "2025-11-26T10:00:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold ETFs That Investors Can Consider as the Metal Extends Its Rally",
+      "time": "2025-11-26T10:24:00"
+    },
+    {
+      "category": "market",
+      "ticker": "IWM",
+      "title": "Daily ETF Flows: Hefty Inflows For IWM",
+      "time": "2025-11-26T18:00:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Why Gold Loves Trump as Much as Trump Loves Gold",
+      "time": "2025-11-26T18:35:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Nasdaq ISE Seeks to Quadruple Trading Limits on BlackRock's Bitcoin ETF Options",
+      "time": "2025-11-26T23:21:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Jones Index Rises As Google Leads; Nvidia, Tesla, Robinhood, GE Vernova Eye Key Levels",
+      "time": "2025-11-28T08:07:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Outage Hits Trading, But Dow Indicates Higher; Google Leads Market (Live Coverage)",
+      "time": "2025-11-28T08:27:00"
+    },
+    {
+      "category": "market",
+      "ticker": "IWM",
+      "title": "5 ETFs Primed to Soar if the Fed Cuts Rates in December",
+      "time": "2025-11-28T09:11:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "ETFs to Benefit From Rate Cut Bets and Upbeat Forecasts",
+      "time": "2025-11-28T10:10:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "This Rare Perfect Market Indicator Says a Major Bull Market Is Coming",
+      "time": "2025-11-28T10:26:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "This International ETF Might Be a Better Buy Than the VOO or QQQ",
+      "time": "2025-11-28T10:54:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Billionaires Cant Get Enough Of This ETF",
+      "time": "2025-11-28T10:58:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Meta Platforms - High EVA Shows Why The Premium Is There",
+      "time": "2025-11-28T14:21:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold to $5,000? What Bank of America and UBS Have to Say",
+      "time": "2025-11-29T08:51:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "10 truths about the stock market",
+      "time": "2025-11-29T09:07:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "If You'd Invested $1,000 in the Invesco QQQ Trust (QQQ) 10 Years Ago, Here's How Much You'd Have Today",
+      "time": "2025-11-29T10:25:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "This Historical Market Pattern Just Ended, and It Could Be a Precursor to a Market Crash",
+      "time": "2025-11-29T13:35:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "3 Growth ETFs to Buy With $5,000 and Hold Forever",
+      "time": "2025-11-29T19:47:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Which ETF Deserves a Spot in Your Portfolio Right Now?",
+      "time": "2025-11-30T13:40:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Here's How Much You'd Need to Invest in the Nasdaq-100 to Get Your Portfolio to $1 Million or More by Retirement",
+      "time": "2025-11-30T21:15:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "S&P 500 Delivers Best Thanksgiving Week Since 2008",
+      "time": "2025-12-01T05:43:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Falls 200 Points; Nvidia, Tesla Slide (Live Coverage)",
+      "time": "2025-12-01T08:51:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow, Major Indexes Fall; Nvidia, Tesla Slide (Live Coverage)",
+      "time": "2025-12-01T09:47:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Falls, Synopsys Hits Resistance Despite Nvidia Investment; Walt Disney Pops (Live Coverage)",
+      "time": "2025-12-01T10:48:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "S&P 500 to Hit At Least 7,500-Mark in 2026? ETFs in Focus",
+      "time": "2025-12-01T14:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "2 Invesco ETFs to Buy Before 2026",
+      "time": "2025-12-01T15:07:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Trumps Potential Fed Chair Pick: How It Could Impact Interest Rates and ETFs",
+      "time": "2025-12-01T21:07:00"
+    },
+    {
+      "category": "market",
+      "ticker": "IWM",
+      "title": "ETF Investors Put $28.3B To Work In Holiday-Shortened Week",
+      "time": "2025-12-02T02:54:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Billionaire Ken Griffin Buys an Index Fund That's Crushing Bitcoin, Nvidia, and the S&P 500 in 2025",
+      "time": "2025-12-02T04:12:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Q4 Seasonality Feels Different. Dont Miss This Major Overhang for Markets in 2026.",
+      "time": "2025-12-02T08:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Goodbye, bull market: This spot-on indicator is saying what you don't want to hear",
+      "time": "2025-12-02T08:05:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Rises As AI Stocks Nvidia, Palantir, Astera Rally (Live Coverage)",
+      "time": "2025-12-02T08:42:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "These Are the Hottest Upgrades From the Q3 Reporting Cycle",
+      "time": "2025-12-02T09:06:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Nasdaq Rises As AI Stocks Nvidia, Palantir, Astera Rally (Live Coverage)",
+      "time": "2025-12-02T09:48:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Nvidia Just Lit a Fire Under Synopsys Stock But Its Chart Is Waving Red Flags. Heres the Only Way Id Trade SNPS Here.",
+      "time": "2025-12-02T15:13:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Silver Hits a Record High: 4 Reasons Why ETFs Can Soar Higher",
+      "time": "2025-12-03T09:00:00"
+    },
+    {
+      "category": "dollar",
+      "ticker": "UUP",
+      "title": "Silver Hits a Record High: 4 Reasons Why ETFs Can Soar Higher",
+      "time": "2025-12-03T09:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Rises On Surprise Jobs Data; Nvidia Extends Gains (Live Coverage)",
+      "time": "2025-12-03T09:05:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Edges Up On Jobs Data; Microsoft Sells Off On AI News (Live Coverage)",
+      "time": "2025-12-03T09:41:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "This tech maven bashes nuclear stocks and shares the real way to play AI's energy boom",
+      "time": "2025-12-03T12:35:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "The Cloud Computing Market Could Surge by 218%: Buy This ETF That Holds a Big Position in Alphabet",
+      "time": "2025-12-03T13:36:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Why ETF investors are shaking off tech-stock turbulence and AI bubble fears",
+      "time": "2025-12-03T15:12:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Rises On Surprise Jobless Claims; Snowflake Plunges On Earnings (Live Coverage)",
+      "time": "2025-12-04T09:22:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Wobbles On Surprise Jobless Claims; Snowflake Plunges On Earnings (Live Coverage)",
+      "time": "2025-12-04T09:46:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "ETFs to Keep Your Portfolio on Track in the Long Term",
+      "time": "2025-12-04T11:08:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Why High-Income Seekers Are Turning to Autocallable ETFs",
+      "time": "2025-12-04T11:55:00"
+    },
+    {
+      "category": "market",
+      "ticker": "DIA",
+      "title": "Retirees, It's Time for Your Year-End Portfolio Review. Here's What to Do.",
+      "time": "2025-12-05T02:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "IWM",
+      "title": "Small-cap stocks are about to enter seasonality 'sweet spot'",
+      "time": "2025-12-05T06:30:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Will 2026 be a Great Year for Banks? ETFs in Focus",
+      "time": "2025-12-05T07:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Falls Ahead Of Key Inflation Data; Netflix Dives On Warner Bros. Deal (Live Coverage)",
+      "time": "2025-12-05T08:59:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "The stock market is verging on a holiday breakout - taking gold and silver with it",
+      "time": "2025-12-05T09:14:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "The stock market is verging on a holiday breakout - taking gold and silver with it",
+      "time": "2025-12-05T09:14:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Rises Ahead Of Key Inflation Data; Netflix Falls On Warner Bros. Deal (Live Coverage)",
+      "time": "2025-12-05T09:45:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Capturing AI Gains Without Overexposure: ETFs to Consider",
+      "time": "2025-12-05T10:02:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Why has Invesco's QQQ called me two dozen times in the past few weeks? Is it a scam?",
+      "time": "2025-12-05T12:34:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Prediction: This Will Be the Top-Performing Index ETF in 2026",
+      "time": "2025-12-05T13:52:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Hotstuff Labs launches Hotstuff, a DeFi native Layer 1 connecting On-Chain Trading with Global Fiat Rails",
+      "time": "2025-12-05T14:35:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Despite A Strong Year Already, Gold Stocks Had More To Give",
+      "time": "2025-12-05T16:30:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "1 Risky ETF You Want to Avoid Buying in December",
+      "time": "2025-12-06T07:53:00"
+    }
+  ]
+}

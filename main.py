@@ -5,11 +5,11 @@ from datetime import datetime
 from pathlib import Path
 
 SCRIPTS = {
-    "INFLATION": "inflation.py",
-    "ECO CALENDER": "eco calender.py",
-    "MARKET DATA": "market data.py",
-    "NEWS": "news.py",
-    "REDDIT": "reddit.py"
+    "INFLATION": "Fetchers/inflation.py",
+    "ECO CALENDER": "Fetchers/eco calender.py",
+    "MARKET DATA": "Fetchers/market data.py",
+    "NEWS": "Fetchers/news.py",
+    "REDDIT": "Fetchers/reddit.py"
 }
 
 TIMEOUT_SECONDS = 300
